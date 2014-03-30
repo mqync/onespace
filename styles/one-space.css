@@ -576,12 +576,6 @@ Global/Grid
             z-index: 3;
        }
 
-       #parallax10{
-            background: url(../images/ice_1.png) fixed no-repeat;
-            /*background-color: green;*/
-            z-index: 8;
-            /*opacity: .2;*/
-       }
        #parallax11{
             background: url(../images/ice_2.png) fixed no-repeat;
             /*background-color: yellow;*/
@@ -635,13 +629,6 @@ Global/Grid
             /*background-repeat: no-repeat;*/
        }
 
-       #parallax3 {
-            /*background-image: url(../images/dirt-layer2.png);*/
-            background-image: url(../images/earth.png);
-            background-position: center bottom;
-            background-repeat: no-repeat;
-            background-attachment:fixed; 
-       }
 
        #parallax4 {
             background-image: url(../images/clothe/full_1.png);
@@ -651,43 +638,6 @@ Global/Grid
             z-index: 4;
        }
 
-        #parallax5 {
-            /*background-image: url(../images/rock-1.png);*/
-            background-image: url(../images/Footer_spaceship.png);
-            background-repeat: none;
-            background-size: cover;
-            top: 28%;
-            left: 15%;
-            height: 154px;
-            width: 400px;
-            position: fixed;
-            z-index: 1;
-            transition:filter 0.8s;
-        }
-
-        #parallax6 {
-            background-image: url(../images/SPACESHIP-psd41026.png);
-            background-repeat: none;
-            top: 18%;
-            right: 17%;
-            height: 241px;
-            width: 400px;
-            position: fixed;
-            transition:filter 0.8s;
-            z-index: 2;
-        }
-
-        #parallax7{
-            background: url(../images/halo_1.png) center center no-repeat;
-            background-size: cover;
-            top: -25%;
-            right: -16%;
-            height: 720px;
-            width: 1280px;
-            position: fixed;
-            opacity: .8;
-            z-index: 0;
-        }
 
 
     /* order button */
@@ -1761,7 +1711,7 @@ Global/Grid
         color: #fff;
     }
 
-    #section_5_intro .summary p:nth-child(2){
+    #section_5_intro #summary_card{
         position: absolute;
         top: 250px;
         left: 600px;
@@ -1826,12 +1776,6 @@ Global/Grid
         background: rgba(0,0,0, .2);
         overflow: hidden;
     }
-    #model_illusta_right .feature_points{
-        
-    }
-    #model_illusta_right .feature_points dl{
-        
-    }
     #model_illusta_right .model_illusta_bg{
         right: -250px;
         background:url(../images/clothe/model_3.png) center bottom no-repeat;
@@ -1895,25 +1839,7 @@ Global/Grid
         -webkit-transform: rotate(-20deg);
         transform: rotate(-20deg);
     }
-    /*#center_line:before,
-    #center_line:after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 10px;
-        height: 10px;
-        background: #0bab43;
-        border-radius: 50%;
-        margin-top: -4px;
-        margin-left: -5px;
-    }
-    #center_line:after{
-        left: auto;
-        right: 0;
-        margin-left: 0px;
-        margin-right: -5px;
-    }*/
+
     #model_illusta_center span{
         position: absolute;
         top: -60px;
@@ -1958,12 +1884,6 @@ Global/Grid
         border-radius: 50%;
         background: rgba(255,255,255,0.3);
         z-index: -1;
-    }
-    #model_illusta_right .circle_border{
-        /*left: 0%;*/
-        /*right: 50%;*/
-        /*margin-right:-500px;*/
-        /*margin-left:auto;*/
     }
 
 
@@ -2283,7 +2203,7 @@ Global/Grid
     #section_9_intro .section-title h2{
         font-size: 24px;
         margin-bottom: 10px;
-        color: #999;
+        color: #666;
     }
 
     #section_9_intro dl{

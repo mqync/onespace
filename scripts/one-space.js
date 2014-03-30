@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-30 21:48:07
+* @Last Modified time: 2014-03-31 00:32:08
 */
 
 
@@ -120,26 +120,18 @@ $(function(){
     });
     // END FancyBox
 
-    // BEGIN Carousel
-    // $('.bxslider').bxSlider({
-    //   nextSelector: '#slider-next',
-    //   prevSelector: '#slider-prev',
-    //   nextText: '&#x22;',
-    //   prevText: '&#x21;'
-    // });
-    // END Carousel
 
     // BEGIN Video Controls
-    $("#section_2").hover(
-        function(e){
-            this.getElementsByTagName('video')[0].play();
-            this.getElementsByTagName('video')[1].play();
-        },
-        function(e){
-            this.getElementsByTagName('video')[0].pause();
-            this.getElementsByTagName('video')[1].pause();
-        }
-    );
+    // $("#section_2").hover(
+    //     function(e){
+    //         this.getElementsByTagName('video')[0].play();
+    //         this.getElementsByTagName('video')[1].play();
+    //     },
+    //     function(e){
+    //         this.getElementsByTagName('video')[0].pause();
+    //         this.getElementsByTagName('video')[1].pause();
+    //     }
+    // );
     // END Video Controls
 
     $('#section_7_pic .ripple').click(function(){
