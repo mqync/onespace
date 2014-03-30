@@ -7,11 +7,11 @@
 
     /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     
     .container, 
     .sequence-container,
-    .disruptor-container,  
+    .disruptor-container,
     .static-container {
         width: 700px;
         margin-left: -350px;
@@ -29,18 +29,18 @@
     .push {margin-left: 350px;}
 
     .center-center {
-    margin: 0 auto !important;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    width: 100%;
-    padding-top: 150px;
+        margin: 0 auto !important;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        padding-top: 150px;
     }
     
     .disruptor-container {
-    margin-left: auto;
-    width: 100%;
+        margin-left: auto;
+        width: 100%;
     }
     
     
@@ -64,102 +64,198 @@
     }
     
     .section-head {
-    display:block !important; 
-    opacity: 1 !important;
-    top: 0px !important;
-    z-index: 600;
+        position: relative!important;
+        display:block !important; 
+        opacity: 1 !important;
+        top: 0px !important;
+        z-index: 600;
     }
     .section-body {
-    display:block !important; 
-    opacity: 1 !important;
-    bottom: 0px !important;
-    z-index: 600;
+        display:block !important; 
+        opacity: 1 !important;
+        bottom: 0px !important;
+        z-index: 600;
     }
     
     .disruptor-container {width: 720px; }
     
+
+
+    /*===start===*/
+    #share_toggle{
+        display: none;
+    }
     #start .container {top: 100px; left: 50%; margin-left: -360px; margin-top: 0px; position: relative; }
     #start .section-head h1 {margin-top: 300px; }
-    
-    #parallax1,
-    #parallax2,
-    #parallax3,
+
     #parallax4,
-    #parallax5,
-    #parallax6 {
-    position: absolute;
-    background-attachment:scroll; 
-    }
-    
-    
-    
-    #roll-off-system {
-        background: url(../images/rolloff.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%; 
-        height: 400px;
-        background-position: 50% 50% !important;
+    #parallax9,
+    #parallax11,
+    #parallax12 {
+        position: absolute;
+        background-attachment:scroll;
     }
 
-    #roll-off-system .bx-prev,
-    #roll-off-system .bx-next {display: none;}
-    
-    
-    
-    
-    
-    
-    
-    
-    .mycontainer{
-        width: 100%; overflow: hidden; height: 400px; margin: 0 auto;
+    #section_1 .container {
+        position: static;
+        top: 0;
+        left: 0;
+        margin: 80px auto 0 auto!important;
     }
 
-    .mycontainer .section-body{
-        margin: 0 auto; top: 40px; text-shadow: 0px 0px 5px rgba(0,0,0,.5);
-        overflow: hidden;
-        width: 700px;
+    #parallax9 {
+        background-size: inherit;
+        background-position: 50% bottom!important;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .span-wrap{width: 700px; padding-top: 100px;}
-    
-    #render {
-    background: url(../images/macro-still.png);
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    display: block;
+    #parallax11,
+    #parallax12 {
+        bottom: -200px;
+        top: auto;
+        background-position: 50% bottom!important;
     }
-    #render video,  
-    #render #vid-hover ,
-    #render #vid-overlay {display: none;}
-    
-    #airbrakemx .container{
+    #parallax4{
+        background-position: 50% 240px;
+    }
+
+    video.macro{
+        width: 100%;
+        height: 100%;
+    }
+    video#macro_svg{
+        display: none;
+    }
+    #section_2 .disruptor-container .center-center{
+        top: 0;
+    }
+
+    #section_3_intro .section-title{
+        top: -20px;
+    }
+
+    #line_1,
+    #line_2,
+    #line_5{
+        display: none;
+    }
+    #feature_rounders{
+        position: relative;
+        bottom: -200px;
+        left: 130px
+    }
+    #stage{
+        margin: 0 auto;
+        width: 600px;
         height: 600px;
     }
-    
-        
-    #store-locator iframe{
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    display: block;
+    #shape.spin{
+        -moz-animation: none;
+        -webkit-animation: none;
+        animation: none;
     }
-    
-   
+
+    .summary#summary_1{
+        top: 130px;
+        left: 50%;
+        margin-left: -250px;
     }
-    
-        
-    
+    .summary#summary_2{
+        top: 340px;
+        left: 50%;
+        margin-left: -250px;
+    }
+    .summary#summary_3{
+        top: 500px;
+        left: 50%;
+        margin-left: -250px;
+    }
+    #section_3_intro .ripple{
+        display: none;
+    }
+
+    #section_4 img{
+        margin-left: -480px
+    }
+    #back_logo{
+        margin-left: -170px;
+    }
+    #section_4_intro .section-title{
+        margin-top: 150px;
+        margin-left: -300px;
+    }
+
+    /*section_5*/
+    #model_illusta_left .model_illusta_bg{
+        background-position: center 40px;
+    }
+    #model_illusta_center{
+        margin-left: 240px;
+        margin-top: -110px;
+        -webkit-transform: rotate(-50deg);
+        -moz-transform: rotate(-50deg);
+        transform: rotate(-50deg);
+    }
+
+    #section_5_intro .summary_wrap .summary{
+        border-left: none;
+        padding-left: 0;
+    }
+    #section_5_intro i,
+    #section_5_intro h2,
+    #section_5_intro .summary p{
+        color: #333;
+    }
+    #section_5_intro #summary_card{
+        position: static;
+        margin-top: 40px;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        color: #333;
+    }
+
+
+    #section_6 .container{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    #line_3,
+    #line_4,
+    #section_7_pic .feature_icons .one_icon,
+    #section_7_pic .feature_icons dl{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #section_7_intro .feature_icons li{
+        width: 120px;
+    }
+
+    #section_8_intro .center-center{
+        top: 0;
+        padding-top: 60px;
+    }
+    #section_9_intro .center-center{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ft-inner{
+        width: 700px;
+    }
+
+    #form_content_wrap{
+        width: 100%;
+    }
+    #form_main{
+        width: auto;
+    }
+
+}
+
 
 /* #Mobile (Landscape)
 ================================================== */

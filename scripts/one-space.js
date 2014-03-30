@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 00:32:08
+* @Last Modified time: 2014-03-31 01:30:32
 */
 
 
@@ -404,13 +404,13 @@ $(function(){
 
         // console.log(gap_3)
 
-        if( 500 > gap_2 && gap_2 > -200){
+        if( 500 > gap_2 && gap_2 > -200 && window.innerWidth > 768){
             addBili(2);
         } else {
             removeBili(2);
         }
 
-        if( 200 > gap_3 && gap_3 > -500){
+        if( 200 > gap_3 && gap_3 > -500 && window.innerWidth > 768){
             $('#shape').addClass('spin');
             $('#section_3 .ripple').addClass('bili');
         } else {
@@ -431,7 +431,7 @@ $(function(){
         //     }
         // }
 
-        if( 400 > gap_8 && gap_8 > -500){
+        if( 400 > gap_8 && gap_8 > -500 && window.innerWidth > 768){
             addBili(8);
         } else {
             removeBili(8);

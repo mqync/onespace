@@ -30,24 +30,24 @@
     <script type="text/javascript" src="bower_components/fancybox/source/helpers/jquery.fancybox-media.js"></script>
     <script type="text/javascript">
     $(document).ready(function () {
-
-        if(jQuery.browser.mobile) {
-                console.log("mobileBrowser");
-                $(".lazy").remove();
-                $(".sequence-container").remove();
-            } else {
-                $("body").queryLoader2({
-                    barColor: "#fff",
-                    backgroundColor: "#19ab43",
-                    percentage: true,
-                    barHeight: 2,
-                    completeAnimation: "grow"
-                });
-                $("img.lazy").lazyload({ 
-                    skip_invisible : false,
-                        effect : "fadeOut"
-                });
-            }
+        console.log(window.innerWidth)
+        if(jQuery.browser.mobile || window.innerWidth < 1024) {
+            console.log("mobileBrowser");
+            $(".lazy").remove();
+            $(".sequence-container").remove();
+        } else {
+            $("body").queryLoader2({
+                barColor: "#fff",
+                backgroundColor: "#19ab43",
+                percentage: true,
+                barHeight: 2,
+                completeAnimation: "grow"
+            });
+            $("img.lazy").lazyload({ 
+                skip_invisible : false,
+                    effect : "fadeOut"
+            });
+        }
         
         
     
@@ -546,7 +546,7 @@
                         
                 <!-- <div class="static-container" style="z-index:-1;"><img src="images/sequence1-final/WEB_AMX_shot001_00020.jpg" alt="" /></div> -->
                 
-                <!-- <img id="impact-data" src="images/impact-data.png" style="z-index: 10;" alt="" data-anchor-target="#section_6" data-700-top="display:none;" data-100-top="display:block; opacity:1" data--200-top="display:none;"/> -->
+                <img id="impact-data" src="images/clothe/full_model_17.jpg" alt="" >
             </div>
         </div>
 
@@ -875,7 +875,7 @@
     <script src="scripts/one-space.js"></script>
 
     <script>
-    if(jQuery.browser.mobile){
+    if(jQuery.browser.mobile || window.innerWidth < 1024){
         // console.log("mobileBrowser");
         // $("#progress").remove();
         // $("#progressbg").remove();
