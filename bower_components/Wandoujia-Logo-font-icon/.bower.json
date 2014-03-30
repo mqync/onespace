@@ -1,0 +1,28 @@
+{
+  "name": "Wandoujia-Logo-font-icon",
+  "homepage": "https://github.com/naoyeye/Wandoujia-Logo-font-icon",
+  "authors": [
+    "J.Y Han <ihanjiyun@gmail.com>"
+  ],
+  "description": "Font-icon for Wandoujia logo",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "_release": "33ce032496",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "33ce0324964032e0938f205d0da89fa143602e62"
+  },
+  "_source": "git://github.com/naoyeye/Wandoujia-Logo-font-icon.git",
+  "_target": "*",
+  "_originalSource": "Wandoujia-Logo-font-icon",
+  "_direct": true
+}

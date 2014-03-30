@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>One Space | 豌豆荚</title>
+    <meta name="keywords" content="豌豆荚,One Space,可穿戴设备">
+    <meta name="description" content="这是一段介绍">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/typo.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/fancybox/source/jquery.fancybox.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/fontdiao.css">
+    <link rel="stylesheet" type="text/css" href="styles/one-space.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined'){
+        document.write(unescape("%3Cscript src='scripts/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script type="text/javascript" src="scripts/skrollr.min.js"></script>
+    <script type="text/javascript" src="scripts/detectmobilebrowser.js"></script>
+    <script type="text/javascript" src="scripts/jquery.queryloader2.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery.lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="bower_components/fancybox/source/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="bower_components/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+
+        if(jQuery.browser.mobile) {
+                console.log("mobileBrowser");
+                $(".lazy").remove();
+                $(".sequence-container").remove();
+            } else {
+                $("body").queryLoader2({
+                    barColor: "#fff",
+                    backgroundColor: "#19ab43",
+                    percentage: true,
+                    barHeight: 2,
+                    completeAnimation: "grow"
+                });
+                $("img.lazy").lazyload({ 
+                    skip_invisible : false,
+                        effect : "fadeOut"
+                });
+            }
+        
+        
+    
+    });
+    
+    /*
+    window.addEventListener('DOMContentLoaded',function() {
+        $("body").queryLoader2({
+            barColor: "#c60b22",
+            backgroundColor: "#000",
+            percentage: true,
+            barHeight: 4,
+            completeAnimation: "grow"
+        });
+    });
+    */
+    
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Begin Nav -->
+        <div id="header">
+            <div id="wdj-logo-wrap">
+                <a href="http://www.wandoujia.com">
+                    <i class="wan-wdj-logo" data-0="color: white"
+                    data-3448="color: green;"
+                    data-4448="color: white"></i>
+                    <span></span>
+                </a>
+            </div>
+            <ul id="share" data-0="top: 0px;background:rgba(0,0,0,0);" data-50="top: -50px;background:rgba(0,0,0,0);">
+                <li id="s_weibo" title="分享到新浪微博">
+                    <i class="icon-weibo"></i><span class="tip">分享到新浪微博</span>
+                </li>
+                <li id="s_douban" title="分享到豆瓣">
+                    <i class="icon-douban"></i><span class="tip">分享到豆瓣</span>
+                </li>
+                <li id="s_wechat" title="分享到微信">
+                    <a href="#panel_weixin" class="fancybox">
+                        <i class="icon-wechat"></i><span class="tip">分享到微信</span>
+                    </a>
+                </li>
+                <li id="s_renren" title="分享到人人网">
+                    <i class="icon-renren"></i><span class="tip">分享到人人网</span>
+                </li>
+                <li id="s_q-zone" title="分享到Q-Zone">
+                    <i class="icon-qzone"></i><span class="tip">分享到Q-Zone</span>
+                </li>
+                <li id="s_baidutieba" title="分享到百度贴吧">
+                    <i class="icon-baidu"></i><span class="tip">分享到百度贴吧</span>
+                </li>
+                <li id="s_twitter" title="分享到 Twitter">
+                    <i class="fa fa-twitter"></i><span class="tip">分享到 Twitter</span>
+                </li>
+                <li id="s_facebook" title="分享到 Facebook">
+                    <i class="fa fa-facebook"></i><span class="tip">分享到 Facebook</span>
+                </li>
+                <li id="s_googleplus" title="分享到 Google+">
+                    <i class="fa fa-google-plus"></i><span class="tip">分享到 Google+</span>
+                </li>
+            </ul>
+            <div id="share_toggle" data-0="top:-42px;" data-100="top:0px;">
+                分享
+            </div>
+        </div>
+        <!-- End Nav -->
+
+        <!-- Begin PersistentNav -->
+        <div id="persistentNav">
+            <div id="apply_btn" class="overlay_btn" data-0="right:-170px;"  data-450="right:-15px;">
+                <i class="fa fa-dot-circle-o"></i>
+                <span class="tip">立即申请</span>
+            </div>
+
+            <ul id="rightNav">
+                <li><a class="nav" href="#section_1" 
+                    data-0="background: green;"
+                    data-848="background: black">
+                    <span>1</span></a>
+                </li>
+                <li><a class="nav" href="#section_2"
+                    data-0="background: black"
+                    data-849="background: green;"
+                    data-1348="background: black">
+                    <span>2</span></a>
+                </li>
+                <li><a class="nav" href="#section_3"
+                    data-0="background: black"
+                    data-1348="background: green;"
+                    data-2148="background: black">
+                    <span>3</span></a>
+                </li>
+                <li><a class="nav" href="#section_4"
+                    data-0="background: black"
+                    data-2148="background: green;"
+                    data-2648="background: black">
+                    <span>5</span></a>
+                </li>
+                <li><a class="nav" href="#section_5"
+                    data-0="background: black"
+                    data-2648="background: green;"
+                    data-3448="background: black">
+                    <span>6</span></a>
+                </li>
+                <li><a class="nav" href="#section_6"
+                    data-0="background: black"
+                    data-3448="background: green;"
+                    data-4448="background: black">
+                    <span>7</span></a>
+                </li>
+                <li><a class="nav" href="#section_7"
+                    data-0="background: black"
+                    data-4448="background: green;"
+                    data-5248="background: black">
+                    <span>8</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- End PersistentNav -->
+
+        <!-- Begin Section -->
+        <div id="section_1" class="section-wrapper">
+
+            <div id="parallax9" data-0="background-position: center 0px;" data-850="background-position: center -170px;"></div>
+
+            <!-- front -->
+            <div id="parallax10" data-0="background-position: center 120px;" data-900="background-position: center -570px;"></div>
+
+            <!-- back blur ice -->
+            <div id="parallax11" data-0="background-position: center 240px;" data-900="background-position: center -870px;"></div>
+
+            <!-- medium -->
+            <div id="parallax12" data-0="background-position: center 200px;" data-900="background-position: center -670px;"></div>
+            <!-- <div id="parallax1"></div> -->
+
+            <!-- <div id="parallax2" data-0="background-position: center 0px;" data-800="background-position: center -220px;"></div> -->
+            <!-- <div id="parallax3" data-0="background-position: center 100px" data-700="background-position: center -375px;"></div> -->
+            <div id="parallax4" data-0="background-position: center 200px;background-size:800px;" data-800="background-position: center -340px;"></div>
+
+            <!-- <div id="parallax5"
+            data-0="display: block; margin-left: 0px; margin-top: 0px;
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+            filter: blur(2px);
+            -webkit-transform: rotate(-20deg) scale(.8);
+            -moz-transform: rotate(-20deg) scale(.8) ;
+            -o-transform: rotate(-20deg) scale(.8);
+            -ms-transform: rotate(-20deg) scale(.8);
+            transform: rotate (-20deg) scale(.8);"
+
+            data-400="margin-left: -200px; margin-top: -100px;
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+            filter: blur(0px);
+            -webkit-transform: rotate(5deg) scale(1.1);
+            -moz-transform: rotate(5deg) scale(1.1);
+            -o-transform: rotate(5deg) scale(1.1);
+            -ms-transform: rotate(5deg) scale(1.1);
+            transform: rotate (5deg) scale(1.1)"
+
+            data-900="margin-left: -400px; margin-top: -200px;
+            -webkit-transform: rotate(10deg) scale(2.2);
+            -moz-transform: rotate(10deg) scale(2.2);
+            -o-transform: rotate(10deg) scale(2.2);
+            -ms-transform: rotate(10deg) scale(2.2);
+            transform: rotate (10deg) scale(2.2)"
+
+            data-1000="display: none;"></div> -->
+
+            <!-- <div id="parallax6"
+
+            data-0="display: block; margin-right: 0px; margin-top: 0px;
+            -webkit-filter: blur(3px);
+            -moz-filter: blur(3px);
+            -o-filter: blur(3px);
+            -ms-filter: blur(3px);
+            filter: blur(3px);
+            -webkit-transform: rotate(10deg) scale(.3);
+            -moz-transform: rotate(10deg) scale(.3);
+            -o-transform: rotate(10deg) scale(.3);
+            -ms-transform: rotate(10deg) scale(.3);
+            transform: rotate (10deg) scale(.3)"
+
+            data-400="margin-right: 100px; margin-top: -100px;
+            -webkit-filter: blur(1px);
+            -moz-filter: blur(1px);
+            -o-filter: blur(1px);
+            -ms-filter: blur(1px);
+            filter: blur(1px);
+            -webkit-transform: rotate(5deg) scale(.6);
+            -moz-transform: rotate(5deg) scale(.6);
+            -o-transform: rotate(5deg) scale(.6);
+            -ms-transform: rotate(5deg) scale(.6);
+            transform: rotate (5deg) scale(.6)"
+
+            data-800="margin-right: 300px; margin-top: -300px;
+            -webkit-transform: rotate(0deg) scale(1.2);
+            -moz-transform: rotate(0deg) scale(1.2);
+            -o-transform: rotate(0deg) scale(1.2);
+            -ms-transform: rotate(0deg) scale(1.2);
+            transform: rotate (0deg) scale(1.2);"
+
+            data-1000="display: none;"></div> -->
+
+            <!-- <div id="parallax7"
+            data-0="display: block; margin-right: 0px; margin-top: 0px;
+            -webkit-transform: rotate(10deg) scale(1);
+            -moz-transform: rotate(10deg) scale(1);
+            -o-transform: rotate(10deg) scale(1);
+            -ms-transform: rotate(10deg) scale(1);
+            transform: rotate (10deg) scale(1); "
+
+            data-900="margin-right: 0px; margin-top: -200px;
+            -webkit-transform: rotate(0deg) scale(1.2);
+            -moz-transform: rotate(0deg) scale(1.2);
+            -o-transform: rotate(0deg) scale(1.2);
+            -ms-transform: rotate(0deg) scale(1.2);
+            transform: rotate (0deg) scale(1.2);"
+
+            data-1000="display: none;"></div> -->
+
+            <div class="container" data-anchor-target="#section_2" data-0="display:block" data-100-bottom="display: none;">
+
+                <div class="section-head intro-wrapper">
+                    <div class="full centered">
+                        <h1 class="logo">One-Space</h1>
+
+                        <h3>极致手机娱乐搜索体验</h3>
+
+                        <div class="start-exploring show overlay_btn">
+                            <div class="button"><i class="fa fa-dot-circle-o"></i>立即申请</div>
+                            <div class="bottom-line"></div>
+                            <div class="right-border"></div>
+                            <div class="top-border"></div>
+                            <div class="left-border"></div>
+                            <div class="bottom-border"></div>
+                            <div class="rectangle-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a id="scroll" data-0="bottom: 40px;" data-300="bottom: -80px;">
+                &#x36;
+            </a> -->
+        </div>
+
+        <div id="section_2" class="disruptor">
+            <div id="video-wrap">
+                <div id="video-inner">
+                    <!-- <video id="macro" autoplay="autoplay"> -->
+                        <!-- <source src="videos/intro.mp4" type="video/mp4"> -->
+                        <!-- <source src="video/AMX_macro_black.ogv" type="video/ogg"> -->
+                    <!-- </video> -->
+
+                    <!-- <video id="macro" preload="ture" autoplay="autoplay" loop="loop">
+                        <source src="videos/default.mp4" type="video/mp4">
+                        <source src="videos/default.webm" type="video/webm">
+                        <source src="videos/default.ogg" type="video/ogg">
+                    </video> -->
+
+                    <video class="macro" preload="none" poster="images/poster.jpg" loop="loop">
+                        <source id="wistia_3_source" src="videos/file.mp4" type="video/mp4">
+                    </video>
+
+                    <video id="macro_svg" class="macro" preload="none" poster="images/poster.jpg" loop="loop">
+                        <source id="wistia_3_source" src="videos/file.mp4" type="video/mp4">
+                    </video>
+
+                    <style type="text/css">
+                        video#macro_svg{
+                            mask:url('#vmask');  /*Firefox */
+                            -webkit-mask-box-image:url('text.svg'); /*Chrome, Safari */
+                        }
+                    </style>
+
+                    <svg>
+                        <mask id="vmask">
+                            <text x="180" y="180" font-size="150" font-family="Verdana" font-weight="bold" fill="#fff">TESTTEST</text>
+                        </mask>
+                    </svg>
+
+
+
+
+                    <!-- <video id="macro" preload="none" autoplay="autoplay" poster="images/poster.png">
+                        <source src="videos/file.mp4" type="video/mp4">
+                    </video> -->
+                </div>
+            </div>
+            <div class="disruptor-container">
+                <div class="center-center">
+                    <a class="fancybox-media play ripple" href="https://vimeo.com/28984968"><i class="fa fa-play"></i></a> 
+                    <!-- <h1>Revolution-c</h1> -->
+                    <!-- <h3 class="subhead">融合未来智能穿戴设备技术，打造“人机一体”的顶尖创新科技</h3> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="section_3" class="section-wrapper">
+            
+            <div id="section_3_intro" class="container">
+                <div class="section-title" data-top-top="top:100px;" data-600-top="top: -300px;">
+                    <i>.01</i>
+                    <h2 class="spec">Direct Content</h2>
+                    <h2>直达内容</2>
+                </div>
+
+                <div class="summary_wrap">
+                    <div class="summary" id="summary_1">
+                        <ul class="feature_icons">
+                            <li><i class="one_icon one_icon_game"></i></li>
+                        </ul>
+                        <p>One Space 表层设置有 269 个微型全息投影点，可将手机中的视频、游戏、电子书、壁纸等娱乐内容投射到半径 3 米的全息投影半球空间内，360°全视野完美呈现情景。</p>
+                        <canvas id="line_1" width="50" height="125"></canvas>
+                        <div class="ripple sum_ripple_1 bili"></div>
+                    </div>
+
+
+                    <div class="summary" id="summary_2">
+                        <ul class="feature_icons">
+                            <li><i class="one_icon one_icon_3d"></i></li>
+                        </ul>
+                        <p>位于 One Space 连体帽边缘的 SRS 3D 环绕立体声系统，能够完美还原立体音效，提供富有真实空间感的声场。</p>
+                        <canvas id="line_2" width="464" height="488"></canvas>
+                        <div class="ripple sum_ripple_2"></div>
+                    </div>
+
+                    <div class="summary" id="summary_3">
+                        <ul class="feature_icons">
+                            <li><i class="one_icon one_icon_stereo"></i></li>
+                        </ul>
+                        <p>分布在衣领两侧的高灵敏度立体声电容麦克风，兼容 XY 和 AB 两种拾音制式，根据声源远近自由切换。声色俱全，如临其境。</p>
+                        <canvas id="line_5" width="475" height="185"></canvas>
+                        <div class="ripple sum_ripple_5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="feature_rounders"> 
+
+             <!-- data-top-top="bottom:0px;" data-600-top="bottom: -200px;" -->
+
+                <div id="stage">
+                    <div id="section_3_pic"></div>
+                    <div id="shape" class="ring backfaces">
+                        <div class="plane one"></div>
+                        <div class="plane two"></div>
+                        <div class="plane three"></div>
+                        <div class="plane four"></div>
+                        <div class="plane five"></div>
+                        <div class="plane six"></div>
+                        <div class="plane seven"></div>
+                        <div class="plane eight"></div>
+                        <div class="plane nine"></div>
+                        <div class="plane ten"></div>
+                        <div class="plane eleven"></div>
+                        <div class="plane twelve"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section_4" class="disruptor">
+            <img src="images/clothe/model_1.png" data--50-top="margin-left: -560px;" data-top-top="margin-left: -550px;" data-300-top="margin-left: 0px;">
+
+            <div id="back_logo" data-top-top="margin-left: -170px;"  data-300-top="margin-left: 100px;"></div>
+
+            <div id="section_4_intro" class="static-container">
+                <div class="grid">
+                    <div class="section-title"
+                    data--600-top="margin-top: 600px;"
+                    data-200-top="margin-top: 150px;" 
+                    data-100-top="margin-top: 150px;" 
+                    data-500-top="margin-top:600px;">
+                        <!-- <h2>One Space</h2> -->
+                        <!-- <h2>Jacket</h2> -->
+                        <h2>即搜即享! <span>So Happy!</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section_5" class="disruptor">
+            <div id="model_illusta_left" class="model_illusta">
+                <div class="feature_points"
+                    data-50-top="left:50%;margin-left: 250px;"
+                    data-top-top="left:50%;margin-left:-500px;opacity:1;"
+                    data--500-top="left:50%;margin-left:-1000px;opacity:0;">
+                    <div class="model_illusta_bg"
+                        data-100-top="background-size: 220px;"
+                        data-top-top="background-size: 150px;"></div>
+                </div>
+
+                <div class="circle_border"
+                data-50-top="-moz-transform: scale(0);
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    top: 450px;"
+                data-350-top="-moz-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    top: 350px;"
+                data-450-top="-moz-transform: scale(0);
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    top: 450px;"></div>
+            </div>
+
+            <div id="model_illusta_right" class="model_illusta" data-100-top="right:-100%;" data-top-top="right:-50%;" data--180-top="right:0%;">
+                <div class="feature_points" data-100-top="left:-25%;" data-top-top="left:0%;" data--180-top="left:50%;">
+                    <div class="model_illusta_bg" data-top-top="background-size: 150px;margin-left:0px;" data-100-top="background-size: 220px;margin-left:0px;" data--180-top="margin-left:-250px;"></div>
+                </div>
+            </div>
+
+
+            <!-- <canvas id="wave_line"></canvas> -->
+
+                <!--             
+                <div id="center_line"
+                    data-860-top="
+                        margin-top:850px;
+                        margin-left:-100px;
+                        -moz-transform: scale(0) rotate(10deg);
+                        -webkit-transform: scale(0) rotate(10deg);
+                        transform: scale(0) rotate(10deg);
+                        opacity:0;
+                        overflow:visible;"
+                    data-480-top="
+                        margin-top:170px;
+                        margin-left:-100px;
+                        -moz-transform: scale(0) rotate(10deg);
+                        -webkit-transform: scale(0) rotate(10deg);
+                        transform: scale(0) rotate(10deg);
+                        opacity:0;
+                        overflow:visible;"
+                    data-443-top="
+                        margin-top:60px;
+                        margin-left:-220px;
+                        -moz-transform: scale(1) rotate(10deg);
+                        -webkit-transform: scale(1) rotate(10deg);
+                        transform: scale(1) rotate(10deg);
+                        opacity:1;
+                        overflow:visible;"
+                    data-153-top="
+                        margin-top:60px;
+                        margin-left:-220px;
+                        -moz-transform: scale(1) rotate(10deg);
+                        -webkit-transform: scale(1) rotate(10deg);
+                        transform: scale(1) rotate(10deg);
+                        opacity:1;
+                        overflow:hidden;"
+                    data-10-top="
+                        margin-top:60px;
+                        margin-left:-220px;
+                        -moz-transform: scale(1) rotate(10deg);
+                        -webkit-transform: scale(1) rotate(10deg);
+                        transform: scale(1) rotate(10deg);
+                        opacity:1;
+                        overflow:hidden;"></div> -->
+
+            <div id="model_illusta_center"
+
+                    data--400-top="
+                        -moz-transform: scale(0);
+                        -webkit-transform: scale(0);
+                        transform: scale(0);
+                        margin-left: -214px;
+                        margin-top: 100px;"
+
+                    data--350-top="-moz-transform: scale(1);
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        margin-left:-214px;
+                        margin-top: 100px;"
+
+                    data-140-top="-moz-transform: scale(1);
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        margin-left:-214px;
+                        margin-top: 100px;
+                        opacity:1;"
+
+                    data-180-top="-moz-transform: scale(0.1);
+                    -webkit-transform: scale(0.1);
+                    transform: scale(0.1);
+                    margin-left:-114px;
+                    margin-top: -40px;
+                    opacity:0;"
+
+                    data-220-top="-moz-transform: scale(0);
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    margin-left:-114px;
+                    margin-top: -50px;
+                    opacity:0;">
+                <span></span>
+                <i></i>
+            </div>
+
+
+            <div id="section_5_intro" class="static-container" data-0="display:block;">
+                <div class="grid">
+                    <div class="section-title">
+                        <i>.02</i>
+                        <h2 class="spec">DIRECT ACCESS TO EACH OTHER</h2>
+                        <h2>直达彼此</2>
+                    </div>
+                    <div class="summary_wrap">
+                        <div class="summary">
+                            <p>One Space 胸前口袋内置 NFC，当您在手机上打开豌豆荚并开始搜索娱乐内容时，豌豆荚会提示是否通过 NFC 连接到 One Space。</p>
+
+                            <p data--80-top="opacity:1;"
+
+                            data--40-top="opacity:0;"
+
+                            data-100-top="opacity:0;">衣内密布微型动作捕捉点阵，领口设置微型表情捕捉系统，共同组成WAN－MOVE 形体还原系统，实时扫描您的情态动作。当您与他人通过 One-Space 远程连接时，WAN－MOVE 形体还原系统可将您与对方的实时动态数据传输给彼此，并通过高清投影点阵在彼此身边投射出对方形体的全息影像，直达彼此，天涯共此时。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section_6" class="section-wrapper">
+    
+            <div class="container" data-250="display: block; z-index:100;" >
+                <!-- 
+                <div class="container" data-0="display: block; z-index:100;" data-2000-bottom-top="z-index:100;" data-1800-bottom-top="z-index:700;" data-bottom-top="margin-top: -350px;" data-top-top="margin-top: -1200px;" data-top-bottom="z-index:100; display: none;"> -->
+
+                <!-- <div class="section-head" style="z-index: 10;" data-anchor-target="#section_6" data-2000-top="display:none;" data-200-top="display:block; opacity: 0; top: -50px;"data-100-top= "display:block; top: 0px; opacity: 1;" data--200-top= "display:block; top: 0px;" data--300-top="display:block; top:-50px; opacity: 0;">
+                    <div class="push grid right" style="z-index: 10;">
+                        <h2><span class="number">.01</span></br>Impact</br>Protection</h2>      
+                    </div>
+                </div> -->
+                
+                <!-- <div class="section-body" data-anchor-target="#section_6" data-2000-top="display:none;" data-200-top="display:block; opacity: 0; bottom: -50px;"data-100-top= "display:block; bottom: 0px; opacity: 1;" data--200-top= "display:block; bottom: 0px;" data--300-top="display:block; bottom:-50px; opacity: 0;">
+                    <div class=" grid">
+                        <p><strong>A Confidence-Inspiring Force Field.</strong></br>The high-velocity spray of dirt and rocks generated by other bikes is no threat to Oakley’s built-in impact protection. 
+                        <a class="fancybox" href="#read-more1">Read More &rsaquo;</a> 
+                        </p> 
+                        
+                        <div id="read-more1" style="width:400px;display: none; z-index: 10;">
+                            <h3>Impact Protection</h3>
+                            <p>
+                                Airbrake MX is the first ever MX goggle with a lens made of injection-molded Plutonite® , the most optically pure lens material ever utilized for MX goggles. Plutonite will not only significantly boost clarity, it’s strength will resist impacts from dirt and rocks coming at your face like a spray of ballistic missiles. With a confidence-inspiring force field for clarity of mind, Airbrake’s Plutonite®  lens gives you a laser-lock focus on victory.                  </p>
+                        </div>
+                        
+                        <a class="fancybox-media play-min" href="http://www.youtube.com/watch?v=Ut2B8eq6Ql0">
+                            <i class="play-icon">&#x31;</i>Watch The Video
+                        </a>                
+                    </div>
+                </div> -->
+
+                <!-- 
+                <img id="impact" src="images/impact-rock.png"  style="z-index: 10;" alt="Rock flying at your face" data-anchor-target="#section_6" 
+                
+                    data-2000-top="display:none; left: -300px; opacity: 0;" 
+                    
+                    data-1000-top="display:none; opacity: 0;" 
+                    
+                    data-600-top="display:block;left: -300px; top:47%%; opacity:0;
+                        -webkit-transform: rotate(10deg);
+                        -moz-transform: rotate(10deg);
+                        -o-transform: rotate(10deg);
+                        -ms-transform: rotate(10deg);
+                        transform: rotate (10deg);
+                    " 
+                
+                    data-100-top="display:block; left: -50px; top:45%; opacity:1;
+                        -webkit-transform: rotate(270deg);
+                        -moz-transform: rotate(270deg);
+                        -o-transform: rotate(270deg);
+                        -ms-transform: rotate(270deg);
+                        transform: rotate (270deg);
+                    " 
+                    
+                    data--200-top="display:block; left: -50px; top:45%; opacity:1" 
+                    
+                    data--500-top="left: -300px; opacity: 0; top:0%;
+                        -webkit-transform: rotate(360deg);
+                        -moz-transform: rotate(360deg);
+                        -o-transform: rotate(360eg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate (360deg);
+                    " /> -->
+                
+                <div class="sequence-container" data--379-top="margin-top: -350px;" data-2000-top="margin-top: -312px;" data-anchor-target="#section_6" style="z-index: -1 !important;">
+    
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_1.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-800-top="display:block;" data-760-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_2.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-761-top="display:block;" data-680-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_3.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-681-top="display:block;" data-600-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_4.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-601-top="display:block;" data-520-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_5.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-521-top="display:block;" data-440-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_6.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-441-top="display:block;" data-360-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_7.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-361-top="display:block;" data-280-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_8.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-281-top="display:block;" data-200-top="display:none;" />
+
+
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_9.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-201-top="display:block;" data-120-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_10.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-121-top="display:block;" data-40-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_11.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data-41-top="display:block;" data--220-top="display:none;" />
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_12.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--219-top="display:block;" data--260-top="display:none;" />    
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_13.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--259-top="display:block;" data--300-top="display:none;" />              
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_14.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--299-top="display:block;" data--340-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_15.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--339-top="display:block;" data--380-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_16.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--379-top="display:block;" data--420-top="display:none;" />
+
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_17.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--419-top="display:block;" data--460-top="display:block;" />
+
+
+                    <!-- <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_2.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--459-top="display:block;" data--500-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_3.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--499-top="display:block;" data--540-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_4.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--539-top="display:block;" data--580-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_5.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--579-top="display:block;" data--620-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_6.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--619-top="display:block;" data--660-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_7.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--659-top="display:block;" data--700-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_8.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--699-top="display:block;" data--740-top="display:none;" />
+
+
+
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_1.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--739-top="display:block;" data--780-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_2.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--779-top="display:block;" data--820-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_3.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--819-top="display:block;" data--860-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_4.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--859-top="display:block;" data--900-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_5.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--899-top="display:block;" data--940-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_6.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--939-top="display:block;" data--980-top="display:none;" />
+                    <img class="lazy" src="images/blank.gif" data-original="images/clothe/full_model_7.jpg" alt="" data-anchor-target="#section_6" data-2000-top="display:none;" data--979-top="display:block;" /> -->
+                         
+                </div><!-- image sequence frame -->
+                        
+                <!-- <div class="static-container" style="z-index:-1;"><img src="images/sequence1-final/WEB_AMX_shot001_00020.jpg" alt="" /></div> -->
+                
+                <!-- <img id="impact-data" src="images/impact-data.png" style="z-index: 10;" alt="" data-anchor-target="#section_6" data-700-top="display:none;" data-100-top="display:block; opacity:1" data--200-top="display:none;"/> -->
+            </div>
+        </div>
+
+        <div id="section_7" class="disruptor">
+
+            <div id="section_7_pic" class="summary_wrap">
+                <div class="summary">
+                    <ul class="feature_icons">
+                        <li>
+                            <div class="ripple sum_ripple_3"></div>
+                            <i class="one_icon one_icon_material"></i>
+                            <canvas id="line_3" width="200" height="200"></canvas>
+                            <dl>
+                                <dt>三层 WAN－TEX面料</dt>
+                                <dd>户外级免洗面料，由外层面料、WAN－TEX 薄膜、里料压覆而成。</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="ripple sum_ripple_4"></div>
+                            <i class="one_icon one_icon_NFC"></i>
+                            <canvas id="line_4" width="200" height="200"></canvas>
+                            <dl>
+                                <dt>内置NFC</dt>
+                                <dd>内置 NFC 自动一步连接到手机。</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+
+            <div id="section_7_intro" class="static-container">
+                <div class="grid">
+                    <div class="section-title">
+                        <i>.03</i>
+                        <h2 class="spec">FINE TIP TECHNOLOGY</h2>
+                        <h2>精尖工艺</2>
+                    </div>
+
+                    <div class="summary_wrap">
+                        <div class="summary">
+                            <p>三层 WAN－TEX 特殊面料制作，轻薄免洗，具有「动态式」透气功能，有效保持衣内干爽。内置 NFC 自动一步连接到手机。</p>
+                            <ul class="feature_icons">
+                                <li>
+                                    <i class="tech_icon tech_icon_1"></i>
+                                    <p>面料经过 DWR 防泼水处理，防水系数 6000 mm</p>
+                                </li>
+                                <li>
+                                    <i class="tech_icon tech_icon_2"></i>
+                                    <p>轻薄透气，透气系数约为 30000 g/m²/24h</p>
+                                </li>
+                                <li>
+                                    <i class="tech_icon tech_icon_3"></i>
+                                    <p>「动态式」透气技术，排出内部湿气，从而有效保持衣内干爽</p>
+                                </li>
+                                <li>
+                                    <i class="tech_icon tech_icon_4"></i>
+                                    <p>允许外界的少量空气通过渗透方式进入服装内部，循环速度随着运动的剧烈度增大而增大</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <div class="summary">
+                            <p>表层微型高清投影点，可将手机中的视频、游戏、电子书、壁纸等娱乐内容全息投影到一个半径 3 米的半球空间内。</p>
+                            <ul class="feature_icons">
+                                <li><i class="one_icon one_icon_video"></i></li>
+                                <li><i class="one_icon one_icon_book"></i></li>
+                                <li><i class="one_icon one_icon_game"></i></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section_8" class="disruptor">
+            <div id="section_8_intro" class="static-container">
+                <div class="center-center">
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-crop"></i></span>
+                            <h3>立体裁切 精工黏合</h3>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-pagelines"></i></span>
+                            <h3>绿色环保包装，可回收再利用</h3>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-truck"></i></span>
+                            <h3>快捷物流运送</h3>
+                        </li>
+                    </ul>
+                    <div class="start-exploring show overlay_btn">
+                        <div class="button"><i class="fa fa-dot-circle-o"></i>立即申请</div>
+                        <div class="bottom-line"></div>
+                        <div class="right-border"></div>
+                        <div class="top-border"></div>
+                        <div class="left-border"></div>
+                        <div class="bottom-border"></div>
+                        <div class="rectangle-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section_9" class="disruptor">
+            合作方
+        </div>
+        <!-- End Section -->
+
+        <!-- Begin Footer -->
+        <div id="footer" class="disruptor">
+            这是Footer
+        </div>
+        <!-- End Footer -->
+    </div>
+
+    <div id="form_overlay">
+        <div class="form_overlay_close"> <i class="fa fa-times"></i> </div>
+        <div id="form_content_wrap">
+            <div id="form_content">
+                <div id="form_inner">
+                    <div id="preview_wrap">
+                        <div id="preview_slider">
+                            <img id="curr_preview" src="images/clothe/model_detail_1_big.jpg" width="400" height="400" style="display:block">
+
+                            <ul>
+                                <li class="active" data-order="1">
+                                    <a href="javascript:void(0);"><img src="images/clothe/model_detail_1.jpg"></a>
+                                </li>
+                                <li data-order="2">
+                                    <a href="javascript:void(0);"><img src="images/clothe/model_detail_2.jpg"></a>
+                                </li>
+                                <li data-order="3">
+                                    <a href="javascript:void(0);"><img src="images/clothe/model_detail_3.jpg"></a>
+                                </li>
+                                <li data-order="4">
+                                    <a href="javascript:void(0);"><img src="images/clothe/model_detail_4.jpg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="form_main">
+                        <form role="form" id="apply_form">
+                            <fieldset>
+                                <legend>One Space内测申请</legend>
+                                <p>One Space目前正在内测试用中，尚未大规模上市，您的试用和反馈将帮助我们继续改善产品。</p>
+                            
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <span>款式：</span>
+                                        <input type="radio" name="gender" checked="checked"  value="men">
+                                        <label>男款</label>
+                                        <input type="radio" name="gender" value="women">
+                                        <label>女款</label>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <span>颜色：</span>
+                                        <input type="radio" name="colors" checked="checked">
+                                        <label>绿</label>
+                                        <input type="radio" name="colors">
+                                        <label>白</label>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="ui radio checkbox" id="men_size">
+                                        <span>尺寸：</span>
+                                        <input type="radio" name="men_size" checked="checked">
+                                        <label>S</label>
+                                        <input type="radio" name="men_size">
+                                        <label>M</label>
+                                        <input type="radio" name="men_size">
+                                        <label>L</label>
+                                        <input type="radio" name="men_size">
+                                        <label>XL</label>
+                                        <input type="radio" name="men_size">
+                                        <label>XXL</label>
+                                        <input type="radio" name="men_size">
+                                        <label>XXXL</label>
+                                    </div>
+                                    <div class="ui radio checkbox" id="women_size">
+                                        <span>尺寸：</span>
+                                        <input type="radio" name="women_size" checked="checked">
+                                        <label>XS</label>
+                                        <input type="radio" name="women_size">
+                                        <label>S</label>
+                                        <input type="radio" name="women_size">
+                                        <label>M</label>
+                                        <input type="radio" name="women_size">
+                                        <label>L</label>
+                                        <input type="radio" name="women_size">
+                                        <label>XL</label>
+                                    </div>
+                                </div>
+
+                                <div id="size_table">
+                                    <a href="javascript:void(0);">尺寸(身高/胸围)对照表 <i class="fa fa-caret-down"></i></a>
+                                    <table class="tg">
+                                        <tr>
+                                            <th class="tg-031e" rowspan="2">男</th>
+                                            <th class="tg-031e">S(165/88A)</th>
+                                            <th class="tg-031e">M(170/92A)</th>
+                                            <th class="tg-031e">L(175/96A)</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-031e">XL(180/100A)</td>
+                                            <td class="tg-031e">XXL(185/104A)</td>
+                                            <td class="tg-031e">XXXL(190/108A)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-031e" rowspan="2">女</td>
+                                            <td class="tg-031e">XS(155/76A)</td>
+                                            <td class="tg-031e">S(160/80A)</td>
+                                            <td class="tg-031e">M(165/84A)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tg-031e">L(170/88A)</td>
+                                            <td class="tg-031e">XL(175/92A)</td>
+                                            <td class="tg-031e"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="action center">
+                                    <button class="btn green">填好了，提交申请</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="panel_weixin">
+        <h3>分享到微信</h3>
+        <section class="weixin-section">
+            <img src="http://www.wandoujia.com/qr?c=http://www.wandoujia.com/onespace/" alt="" />
+            <p>
+                1. 打开微信“扫一扫”，扫描二维码。
+                <br><br>
+                2. 等待微信打开网页，然后点击屏幕右上角的“分享”按钮 <span><i class="fa fa-share-square-o"></i></span>。
+            </p>
+        </section>
+    </div>
+
+    <div id="qLoverlay">
+        texrt
+    </div>
+
+    <script src="scripts/one-space.js"></script>
+
+    <script>
+    if(jQuery.browser.mobile){
+        console.log("mobileBrowser");
+        $("#progress").remove();
+        $("#progressbg").remove();
+    } else {
+        var s = skrollr.init({
+            forceHeight: false
+        });
+    }
+    </script>
+
+    <script type="text/javascript">
+    // GA
+    </script>
+</body>
+</html>

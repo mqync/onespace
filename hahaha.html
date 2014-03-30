@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" id="h_h">
+    <head>
+        <meta charset="utf-8">
+        <title>One Space | 豌豆荚</title>
+        <meta name="keywords" content="豌豆荚,One Space,可穿戴设备">
+        <meta name="description" content="这是一段介绍">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/typo.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/fancybox/source/jquery.fancybox.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="styles/fontdiao.css">
+        <link rel="stylesheet" type="text/css" href="styles/one-space.css">
+
+        <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+        <script type="text/javascript">
+        if (typeof jQuery == 'undefined'){
+            document.write(unescape("%3Cscript src='scripts/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+        </script>
+        <script type="text/javascript" src="scripts/detectmobilebrowser.js"></script>
+        <script type="text/javascript" src="bower_components/fancybox/source/jquery.fancybox.js"></script>
+    </head>
+    <body>
+        <div id="h_h_wrap">
+            <div class="logo">One Space</div>
+            <p>喜欢 One-Space 吧？哈哈，骗你的啦！表生气表生气，其实这是豌豆荚送给大家的礼物！<br><br>豌豆荚有一群非常非常优秀的攻城师和程序猿老湿，他们的恋人、亲人或好友远在千里之外。他们非常希望，在工作之余，能和他们爱的人在一起，看看电影、玩玩游戏、读读书什么的，享受平日里温暖惬意的时光。One Space，是他们用技术表达感情的大胆想象。<br><br>豌豆荚希望通过这份小小的礼物，让豌豆荚的老湿们，还有很多很多的人，能够享受开心的娱乐休闲时光，搜 happy，So Happy！ </p>
+            <ul id="share" data-0="top: 0px;background:rgba(0,0,0,0);" data-50="top: -50px;background:rgba(0,0,0,0);">
+                <li id="s_weibo" title="分享到新浪微博">
+                    <i class="icon-weibo"></i><span class="tip">分享到新浪微博</span>
+                </li>
+                <li id="s_douban" title="分享到豆瓣">
+                    <i class="icon-douban"></i><span class="tip">分享到豆瓣</span>
+                </li>
+                <li id="s_wechat" title="分享到微信">
+                    <a href="#panel_weixin" class="fancybox">
+                        <i class="icon-wechat"></i><span class="tip">分享到微信</span>
+                    </a>
+                </li>
+                <li id="s_renren" title="分享到人人网">
+                    <i class="icon-renren"></i><span class="tip">分享到人人网</span>
+                </li>
+                <li id="s_q-zone" title="分享到Q-Zone">
+                    <i class="icon-qzone"></i><span class="tip">分享到Q-Zone</span>
+                </li>
+                <li id="s_baidutieba" title="分享到百度贴吧">
+                    <i class="icon-baidu"></i><span class="tip">分享到百度贴吧</span>
+                </li>
+                <li id="s_twitter" title="分享到 Twitter">
+                    <i class="fa fa-twitter"></i><span class="tip">分享到 Twitter</span>
+                </li>
+                <li id="s_facebook" title="分享到 Facebook">
+                    <i class="fa fa-facebook"></i><span class="tip">分享到 Facebook</span>
+                </li>
+                <li id="s_googleplus" title="分享到 Google+">
+                    <i class="fa fa-google-plus"></i><span class="tip">分享到 Google+</span>
+                </li>
+            </ul>
+        </div>
+        <div id="panel_weixin">
+            <h3>分享到微信</h3>
+            <section class="weixin-section">
+                <img src="http://www.wandoujia.com/qr?c=http://www.wandoujia.com/onespace/" alt="" />
+                <p>
+                    1. 打开微信“扫一扫”，扫描二维码。
+                    <br><br>
+                    2. 等待微信打开网页，然后点击屏幕右上角的“分享”按钮 <span><i class="fa fa-share-square-o"></i></span>。
+                </p>
+            </section>
+        </div>
+    </body>
+    <script>
+    $(".fancybox").fancybox();
+    
+    //share to SNS
+    var n = window.document;
+    var m = "豌豆荚发布新产品，进军可穿戴设备",
+        g = "这个愚人节创意很赞呢，虽然只是个玩笑，但这个想法要是真的实现了，高铁飞机真人 CS 神马的就弱爆了，分享链接：http://www.wandoujia.com/onespace", //description
+        y = "哇，这个愚人节创意真的很有爱，攻城师的浪漫和爱果然高大上啊~分享链接：http://www.wandoujia.com/onespace", // text weibo
+        b = "54354", // title
+
+        // 配图
+        w = "http%3A%2F%2Fimg.wdjimg.com%2Faward%2Fupload%2Fone%2Fweibo-28.png",
+
+        // 静态URL
+        url = "http%3A%2F%2Fwww.wandoujia.com%2Fonespace",
+        test_url = "http%3A%2F%2Fwww.douban.com%2F",
+
+        // douban
+        D = "http://www.douban.com/share/service?image="+ w +"&href="+ url +"&name="+ m +"&text=" + y,
+
+        // 微博
+        E = "http://service.weibo.com/share/share.php?appkey=1483181040&relateUid=1727978503&title=" + y + "&url=&pic=" + w,
+
+        // E =  "http://service.weibo.com/share/share.php?title="+ g +"&url=http://t.jiathis.com/CWy&source=bookmark&appkey=1483181040&pic=&ralateUid="
+
+        // facebook
+        S =  "https://www.facebook.com/sharer/sharer.php?s=100&p[title]="+ encodeURIComponent(m) +"&p[summary]="+ g +"&p[url]="+ url +"&p[images]="+ w,
+
+        // google+
+        x = "https://plus.google.com/share?url=" + url,
+
+        // twitter
+        T = "https://twitter.com/intent/tweet?related=wandoujia&text=" + y + "&url=" + url,
+
+        // renren
+        N = "http://widget.renren.com/dialog/share?title=" + encodeURIComponent(m) + "&resourceUrl="+ url +"&pic=" + w + "&description=" + y,
+
+        // 腾讯微博
+        // C = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=100273333&title=" + encodeURIComponent(m) + "&url=http%3A%2F%2Fone.wandoujia.com%2F%3Futm_source%3Drenren%26utm_medium%3Dshare%26utm_campaign%3Dhanhan-one&pic=" + w,
+
+        Q = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+ url +"&title="+ m +"&pics="+ w +"&summary=" + g,
+
+        // 百度贴吧
+        B = "http://tieba.baidu.com/f/commit/share/openShareApi?title="+ m +"&desc="+ g +"&comment="+ y +"&pic="+ w +"&url=" + url;
+
+
+
+
+
+    $(n).on("click", "#share li", function() {
+        var t = $(this),
+            n = $("<a>");
+        n.attr({
+            target: "_blank"
+        });
+        switch (t[0].id) {
+            case "s_douban":
+                n.attr({
+                    href: D
+                });
+                break;
+            case "s_weibo":
+                n.attr({
+                    href: E
+                });
+                break;
+            // case "s_wechat":
+            //     // n.attr({
+            //     //     href: E
+            //     // });
+            //     break;
+            case "s_renren":
+                n.attr({
+                    href: N
+                });
+                break;
+            // case "qq":
+            //     n.attr({
+            //         href: C
+            //     });
+            //     break;
+            case "s_q-zone":
+                n.attr({
+                    href: Q
+                });
+                break;
+            case "s_baidutieba":
+                n.attr({
+                    href: B
+                });
+                break;
+            case "s_twitter":
+                n.attr({
+                    href: T
+                });
+                break;
+            case "s_facebook":
+                n.attr({
+                    href: S
+                });
+                break;
+            case "s_googleplus":
+                n.attr({
+                    href: x
+                })
+        }!$.browser.msie && !$.browser.mozilla ? n[0].click() : e.open(n.attr("href"));
+        // _gaq.push(["_trackEvent", "one", "share", t[0].id])
+    });
+
+    </script>
+    <script>
+    // GA
+    </script>
+</html>

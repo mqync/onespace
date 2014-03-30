@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <mask>
+            <text id="video_text" x="180" y="180" font-size="150" font-weight="bold" font-family="Verdana" fill="white">TESTTEST</text>
+        </mask>
+    </defs>
+    <use xlink:href="#video_text"/>
+</svg>
