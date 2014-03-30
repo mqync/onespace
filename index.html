@@ -11,11 +11,11 @@
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/typo.css">
     <link rel="stylesheet" type="text/css" href="bower_components/fancybox/source/jquery.fancybox.css" media="screen" />
-    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/fontdiao.css">
     <link rel="stylesheet" type="text/css" href="styles/one-space.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
-    <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <script type="text/javascript">
     if (typeof jQuery == 'undefined'){
@@ -36,16 +36,19 @@
             $(".lazy").remove();
             $(".sequence-container").remove();
         } else {
+            $("img.lazy").lazyload({ 
+                skip_invisible : false,
+                    effect : "fadeOut"
+            });
+        }
+
+        if(window.innerWidth > 767) {
             $("body").queryLoader2({
                 barColor: "#fff",
                 backgroundColor: "#19ab43",
                 percentage: true,
                 barHeight: 2,
                 completeAnimation: "grow"
-            });
-            $("img.lazy").lazyload({ 
-                skip_invisible : false,
-                    effect : "fadeOut"
             });
         }
     });

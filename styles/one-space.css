@@ -510,6 +510,7 @@ Global/Grid
         /*background-image: url(../images/top_bg.png);*/
         background-color: #8f989a;
         background-attachment: fixed;
+        /*z-index: 101;*/
     }
 
     #section_1 .container {
@@ -1614,7 +1615,6 @@ Global/Grid
 
     #section_5{
         height: 800px;
-        background: #e9e9e9;
         overflow: hidden;
     }
 
@@ -2201,6 +2201,7 @@ img#impact {
     top: 0;
     width: 100%;
     z-index: -2;
+    display: none;
 }
 
 
