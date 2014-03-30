@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 01:30:32
+* @Last Modified time: 2014-03-31 05:58:43
 */
 
 
@@ -229,11 +229,24 @@ $(function(){
 // overlay
 
     $('.overlay_btn').click(function(){
-        $('body').addClass('form_overlay_enabled');
+        if($('body').hasClass('form_overlay_enabled')){
+            $('body').removeClass('form_overlay_enabled');
+        } else {
+            $('body').addClass('form_overlay_enabled');
+        }
+        
     })
     $('.form_overlay_close').click(function(){
         $('body').removeClass('form_overlay_enabled');
     })
+
+    // $('.overlay_btn').on('tap', function(){
+    //     console.log(1);
+    //     $('body').addClass('form_overlay_enabled');
+    // })
+    // $('.form_overlay_close').on('tap', function(){
+    //     $('body').removeClass('form_overlay_enabled');
+    // })
 
 //share btn toggle
 

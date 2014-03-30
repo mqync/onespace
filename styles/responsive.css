@@ -1174,16 +1174,26 @@
 
 
 
+    .start-exploring .bottom-line,
+    .start-exploring .right-border,
+    .start-exploring .top-border,
+    .start-exploring .bottom-border
+    ,.start-exploring .rectangle-border{
+        display: none;
+    }
+
 
     #form_content_wrap{
         width: auto;
     }
     #preview_wrap{
-        width: 320px;
+        width: 300px;
         height: auto;
     }
     #form_inner{
         background: #fff;
+        margin: 10px;
+        padding: 0;
     }
     #preview_slider{
         display: none;
