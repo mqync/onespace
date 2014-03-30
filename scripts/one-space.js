@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 06:06:09
+* @Last Modified time: 2014-03-31 06:24:03
 */
 
 
@@ -499,8 +499,9 @@ $(function(){
 
         setTimeout(function(){
 
-            // window.location.href = '/hahaha.html';
-            window.location.href = 'file://localhost/Users/hanjiyun/Google%20Drive/Project/onespace/hahaha.html'
+            window.location.href = '/hahaha.html';
+            // window.location.href = 'file://localhost/Users/hanjiyun/Google%20Drive/Project/onespace/hahaha.html'
+
             //$('body').removeClass('form_overlay_enabled');
             
             // // reset
