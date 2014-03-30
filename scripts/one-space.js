@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 05:58:43
+* @Last Modified time: 2014-03-31 06:06:09
 */
 
 
@@ -499,14 +499,15 @@ $(function(){
 
         setTimeout(function(){
 
-            window.location.href='/hahaha.html';
+            // window.location.href = '/hahaha.html';
+            window.location.href = 'file://localhost/Users/hanjiyun/Google%20Drive/Project/onespace/hahaha.html'
             //$('body').removeClass('form_overlay_enabled');
             
             // // reset
             // document.getElementById("apply_form").reset();
             // btn.removeAttr('disabled').removeClass('loading').html('填好了，提交申请');
 
-        },2000);
+        }, 1200);
 
         return false;
     })
