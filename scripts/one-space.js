@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 14:57:49
+* @Last Modified time: 2014-03-31 15:32:37
 */
 
 
@@ -445,6 +445,7 @@ $(function(){
         // }
 
         if( 400 > gap_8 && gap_8 > -500 && window.innerWidth > 768){
+
             addBili(7);
         } else {
             removeBili(7);
@@ -453,10 +454,18 @@ $(function(){
 
     function removeBili(elem){
         $('#section_'+ elem +' .ripple').removeClass('bili');
+        $('#line_3, #line_4, #section_7_pic .feature_icons .one_icon, #section_7_pic .feature_icons dl').css({
+            'opacity': 0,
+            'visibility': 'hidden'
+        })
     }
 
     function addBili(elem){
         $('#section_'+ elem +' .ripple').addClass('bili');
+        $('#line_3, #line_4, #section_7_pic .feature_icons .one_icon, #section_7_pic .feature_icons dl').css({
+            'opacity': 1,
+            'visibility': 'visible'
+        })
     }
 
 
