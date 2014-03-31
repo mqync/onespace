@@ -1,41 +1,6 @@
 // @charset "UTF-8";
 
-/* 
-* @Author: hanjiyun
-* @Date:   2014-03-19 15:04:09
-* @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-04-01 06:26:33
-*/
-
-
 $(function(){
-
-    function getIEVersion(){
-        var rv = -1;
-        if (navigator.appName == 'Microsoft Internet Explorer'){
-            var ua = navigator.userAgent;
-            var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-            if (re.exec(ua) != null)
-                rv = parseFloat( RegExp.$1 );
-        } else if (navigator.appName == 'Netscape'){
-            var ua = navigator.userAgent;
-            var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");  //for IE 11
-        if (re.exec(ua) != null)
-            rv = parseFloat( RegExp.$1 );
-        }
-        return rv;
-    }
-
-    console.log( getIEVersion())
-
-    if(jQuery.browser.mobile){
-        var w_height = $(window).height();
-        if(w_height < 400) {
-            $('#scroll_btn').hide();
-        } else {
-            $('#section_1').height(w_height);
-        }
-    }
 
 
 // draw line
