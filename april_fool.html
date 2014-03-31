@@ -84,30 +84,26 @@
             </section>
         </div>
     </body>
+    
     <script>
     $(".fancybox").fancybox();
 
     //share to SNS
     var n = window.document;
-    var m = "穿在身上的手机娱乐搜索",
+    var m = "穿在身上的手机娱乐搜索",// title
         g = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！http://www.wandoujia.com/onespace", //description
-        y = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！http://www.wandoujia.com/onespace", // text weibo
-        b = "54354", // title
-
-        // 配图
+        text_for_twitter = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！", // text weibo
+ 
+        // pic
         w = "http%3A%2F%2Fimg.wdjimg.com%2Faward%2Fupload%2Fone%2Fweibo-28.png",
-
-        // 静态URL
+        // static URL
         url = "http%3A%2F%2Fwww.wandoujia.com%2Fonespace",
-        test_url = "http%3A%2F%2Fwww.douban.com%2F",
 
         // douban
-        D = "http://www.douban.com/share/service?image="+ w +"&href="+ url +"&name="+ m +"&text=" + y,
+        D = "http://www.douban.com/share/service?image="+ w +"&href="+ url +"&name="+ m +"&text=" + g,
 
-        // 微博
-        E = "http://service.weibo.com/share/share.php?appkey=1483181040&relateUid=1727978503&title=" + y + "&url=&pic=" + w,
-
-        // E =  "http://service.weibo.com/share/share.php?title="+ g +"&url=http://t.jiathis.com/CWy&source=bookmark&appkey=1483181040&pic=&ralateUid="
+        // weibo
+        E = "http://service.weibo.com/share/share.php?appkey=1483181040&relateUid=1727978503&title=" + g + "&url=&pic=" + w,
 
         // facebook
         S =  "https://www.facebook.com/sharer/sharer.php?s=100&p[title]="+ encodeURIComponent(m) +"&p[summary]="+ g +"&p[url]="+ url +"&p[images]="+ w,
@@ -116,20 +112,16 @@
         x = "https://plus.google.com/share?url=" + url,
 
         // twitter
-        T = "https://twitter.com/intent/tweet?related=wandoujia&text=" + y + "&url=" + url,
+        T = "https://twitter.com/intent/tweet?related=wandoujia&text=" + text_for_twitter + "&url=" + url,
 
         // renren
-        N = "http://widget.renren.com/dialog/share?title=" + encodeURIComponent(m) + "&resourceUrl="+ url +"&pic=" + w + "&description=" + y,
+        N = "http://widget.renren.com/dialog/share?title=" + encodeURIComponent(m) + "&resourceUrl="+ url +"&pic=" + w + "&description=" + g,
 
-        // 腾讯微博
-        // C = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=100273333&title=" + encodeURIComponent(m) + "&url=http%3A%2F%2Fone.wandoujia.com%2F%3Futm_source%3Drenren%26utm_medium%3Dshare%26utm_campaign%3Dhanhan-one&pic=" + w,
-
+        // QQ-zone
         Q = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+ url +"&title="+ m +"&pics="+ w +"&summary=" + g,
 
-        // 百度贴吧
-        B = "http://tieba.baidu.com/f/commit/share/openShareApi?title="+ m +"&desc="+ g +"&comment="+ y +"&pic="+ w +"&url=" + url;
-
-
+        // baidu tieba
+        B = "http://tieba.baidu.com/f/commit/share/openShareApi?title="+ m +"&desc="+ g +"&comment="+ g +"&pic="+ w +"&url=" + url;
 
 
 
@@ -150,21 +142,11 @@
                     href: E
                 });
                 break;
-            // case "s_wechat":
-            //     // n.attr({
-            //     //     href: E
-            //     // });
-            //     break;
             case "s_renren":
                 n.attr({
                     href: N
                 });
                 break;
-            // case "qq":
-            //     n.attr({
-            //         href: C
-            //     });
-            //     break;
             case "s_q-zone":
                 n.attr({
                     href: Q
@@ -190,9 +172,8 @@
                     href: x
                 })
         }!$.browser.msie && !$.browser.mozilla ? n[0].click() : e.open(n.attr("href"));
-        // _gaq.push(["_trackEvent", "one", "share", t[0].id])
+        _gaq.push(["_trackEvent", "onespace", "share", t[0].id])
     });
-
     </script>
 
     <script>

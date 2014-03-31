@@ -1,30 +1,16 @@
+@charset "UTF-8";
+
 /* 
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 16:31:44
+* @Last Modified time: 2014-03-31 17:27:31
 */
 
 
 $(function(){
-    // $('#video a.play').click(function(){
-        // $('#video .disruptor-container').fadeOut(240);
-        // $('#video').css({
-        //     'position':'fixed',
-        //     'z-index':1000,
-        //     top:0,
-        //     left:0
-        // })
-        // $('body').css({
-        //     'overflow':'hidden'
-        // })
-        // $('#macro').css({
-        //     'z-index':2
-        // })
-    // })
 
 // draw line
-
     var c_1 = document.getElementById("line_1");
     var cxt_1 = c_1.getContext("2d");
     cxt_1.beginPath();
@@ -107,14 +93,14 @@ $(function(){
             media : {},
             buttons : {},
             overlay : {
-                closeClick : false,  // if true, fancyBox will be closed when user clicks on the overlay
-                speedOut   : 200,   // duration of fadeOut animation
-                showEarly  : true,  // indicates if should be opened immediately or wait until the content is ready
+                closeClick : false,
+                speedOut   : 200,
+                showEarly  : true,
                 css        : {
                     'background-image':'none',
                     'background-color':'rgba(255,255,255,.9)',
-                },    // custom CSS properties
-                locked     : true   // if true, the content will be locked into overlay
+                },
+                locked     : true
             }
         }
     });
@@ -146,88 +132,9 @@ $(function(){
         }
     })
 
-// wave
 
-    function showWave(){
-        var canvas = document.getElementById('wave_line');
-        var ctx = canvas.getContext('2d');
-
-        var stageWidth = 0;
-        var stageHeight = 0;
-        var stageWidth2 = 0;
-        var stageHeight2 = 0;
-        var totalLength2 = 0;
-
-        var distanceX = 0;
-
-        var config = {
-            canvasHeight : 152,
-            height: 18, //曲线波动高度
-            waveLength: 180, //曲线波动长度
-            curveFactor: 1.6, //曲线因子 左右距离
-            speed: 6, //曲线速度
-            lineWidth : 2, //曲线粗细
-            strokeStyle : 'green', //曲线颜色
-            fillStyle : 'transparent' //曲线底部颜色填充
-            // fillStyle : '#00ce9e' //曲线底部颜色填充
-        }
-
-        var DELTA_WIDTH = 1;
-
-        function init(){
-            window.onresize = onResize;
-            onResize();
-            render();
-        }
-
-        function onResize(){
-            stageWidth = canvas.width = window.innerWidth;
-            stageHeight = canvas.height = window.innerHeight;
-
-            // stageHeight = canvas.height = config.canvasHeight;
-            // todo 高度判断
-            stageWidth2 = stageWidth / 2;
-            stageHeight2 = stageHeight / 2;
-            totalLength2 = Math.ceil(stageWidth2 / DELTA_WIDTH) * DELTA_WIDTH;
-            redraw();
-        }
-
-        function render(){
-            // stats.begin();
-            redraw();
-            requestAnimationFrame(render);
-            // stats.end();
-        }
-
-        function _getHeight(distanceX, x) {
-            var offsetX = ((distanceX + x) /totalLength2 - 1) * (totalLength2 / config.waveLength);
-            var waveFactor = Math.cos((x / totalLength2 - 1) * Math.PI / 2);
-            return Math.cos(offsetX * Math.PI) * Math.pow(waveFactor, config.curveFactor) * config.height;
-        }
-
-        function redraw(){
-            var x = stageWidth2 - totalLength2;
-            var toX = x + totalLength2 * 2;
-            var centerY = stageHeight2;
-            ctx.clearRect(0, 0, stageWidth, stageHeight);
-            ctx.beginPath();
-            // ctx.moveTo(x, stageHeight);
-            for(; x < toX; x+=DELTA_WIDTH){
-                ctx.lineTo(x, centerY - _getHeight(distanceX, x));
-            }
-            // ctx.lineTo(x-DELTA_WIDTH, stageHeight);
-            ctx.lineWidth = config.lineWidth;
-            ctx.strokeStyle = config.strokeStyle;
-            ctx.fillStyle = config.fillStyle;
-            ctx.fill();
-            ctx.stroke();
-            distanceX += config.speed;
-        }
-        init();
-    }
 
 // overlay
-
     $('.overlay_btn').click(function(){
         if($('body').hasClass('form_overlay_enabled')){
             $('body').removeClass('form_overlay_enabled');
@@ -240,16 +147,8 @@ $(function(){
         $('body').removeClass('form_overlay_enabled');
     })
 
-    // $('.overlay_btn').on('tap', function(){
-    //     console.log(1);
-    //     $('body').addClass('form_overlay_enabled');
-    // })
-    // $('.form_overlay_close').on('tap', function(){
-    //     $('body').removeClass('form_overlay_enabled');
-    // })
 
 //share btn toggle
-
     var share_opend = false;
     $('#share_toggle').click(function(){
         var $t = $(this),
@@ -291,25 +190,20 @@ $(function(){
 
 //share to SNS
     var n = window.document;
-    var m = "穿在身上的手机娱乐搜索",
+    var m = "穿在身上的手机娱乐搜索",// title
         g = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！http://www.wandoujia.com/onespace", //description
-        y = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！http://www.wandoujia.com/onespace", // text weibo
-        b = "54354", // title
-
-        // 配图
+        text_for_twitter = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！", // text weibo
+ 
+        // pic
         w = "http%3A%2F%2Fimg.wdjimg.com%2Faward%2Fupload%2Fone%2Fweibo-28.png",
-
-        // 静态URL
+        // static URL
         url = "http%3A%2F%2Fwww.wandoujia.com%2Fonespace",
-        test_url = "http%3A%2F%2Fwww.douban.com%2F",
 
         // douban
-        D = "http://www.douban.com/share/service?image="+ w +"&href="+ url +"&name="+ m +"&text=" + y,
+        D = "http://www.douban.com/share/service?image="+ w +"&href="+ url +"&name="+ m +"&text=" + g,
 
-        // 微博
-        E = "http://service.weibo.com/share/share.php?appkey=1483181040&relateUid=1727978503&title=" + y + "&url=&pic=" + w,
-
-        // E =  "http://service.weibo.com/share/share.php?title="+ g +"&url=http://t.jiathis.com/CWy&source=bookmark&appkey=1483181040&pic=&ralateUid="
+        // weibo
+        E = "http://service.weibo.com/share/share.php?appkey=1483181040&relateUid=1727978503&title=" + g + "&url=&pic=" + w,
 
         // facebook
         S =  "https://www.facebook.com/sharer/sharer.php?s=100&p[title]="+ encodeURIComponent(m) +"&p[summary]="+ g +"&p[url]="+ url +"&p[images]="+ w,
@@ -318,20 +212,16 @@ $(function(){
         x = "https://plus.google.com/share?url=" + url,
 
         // twitter
-        T = "https://twitter.com/intent/tweet?related=wandoujia&text=" + y + "&url=" + url,
+        T = "https://twitter.com/intent/tweet?related=wandoujia&text=" + text_for_twitter + "&url=" + url,
 
         // renren
-        N = "http://widget.renren.com/dialog/share?title=" + encodeURIComponent(m) + "&resourceUrl="+ url +"&pic=" + w + "&description=" + y,
+        N = "http://widget.renren.com/dialog/share?title=" + encodeURIComponent(m) + "&resourceUrl="+ url +"&pic=" + w + "&description=" + g,
 
-        // 腾讯微博
-        // C = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=100273333&title=" + encodeURIComponent(m) + "&url=http%3A%2F%2Fone.wandoujia.com%2F%3Futm_source%3Drenren%26utm_medium%3Dshare%26utm_campaign%3Dhanhan-one&pic=" + w,
-
+        // QQ-zone
         Q = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+ url +"&title="+ m +"&pics="+ w +"&summary=" + g,
 
-        // 百度贴吧
-        B = "http://tieba.baidu.com/f/commit/share/openShareApi?title="+ m +"&desc="+ g +"&comment="+ y +"&pic="+ w +"&url=" + url;
-
-
+        // baidu tieba
+        B = "http://tieba.baidu.com/f/commit/share/openShareApi?title="+ m +"&desc="+ g +"&comment="+ g +"&pic="+ w +"&url=" + url;
 
 
 
@@ -352,21 +242,11 @@ $(function(){
                     href: E
                 });
                 break;
-            // case "s_wechat":
-            //     // n.attr({
-            //     //     href: E
-            //     // });
-            //     break;
             case "s_renren":
                 n.attr({
                     href: N
                 });
                 break;
-            // case "qq":
-            //     n.attr({
-            //         href: C
-            //     });
-            //     break;
             case "s_q-zone":
                 n.attr({
                     href: Q
@@ -392,7 +272,7 @@ $(function(){
                     href: x
                 })
         }!$.browser.msie && !$.browser.mozilla ? n[0].click() : e.open(n.attr("href"));
-        // _gaq.push(["_trackEvent", "one", "share", t[0].id])
+        _gaq.push(["_trackEvent", "onespace", "share", t[0].id])
     });
 
 
@@ -407,15 +287,12 @@ $(function(){
 
         var section_2_offset_y =  section_2.offsetTop;
         var section_3_offset_y =  section_3.offsetTop;
-        // var section_5_offset_y =  section_5.offsetTop;
         var section_7_offset_y =  section_7.offsetTop;
 
         var gap_2 =  section_2_offset_y - scrollTop;
         var gap_3 =  section_3_offset_y - scrollTop;
-        // var gap_6 =  section_5_offset_y - scrollTop;
-        var gap_8 =  section_7_offset_y - scrollTop;
+        var gap_7 =  section_7_offset_y - scrollTop;
 
-        // console.log(gap_3)
 
         if( 500 > gap_2 && gap_2 > -200 && window.innerWidth > 768){
             addBili(2);
@@ -431,20 +308,7 @@ $(function(){
             removeBili(3);
         }
 
-        // if( 200 > gap_6 && gap_6 > -500){
-        //     console.log(1);
-        //     if (!$('#wave_line').hasClass('draw')) {
-        //         console.log(2);
-        //         $('#wave_line').css('display', 'block').addClass('draw');
-        //         showWave();
-        //     }
-        // } else {
-        //     if ($('#wave_line').hasClass('draw')) {
-        //         $('#wave_line').css('display', 'none').removeClass('draw');
-        //     }
-        // }
-
-        if( 400 > gap_8 && gap_8 > -500 && window.innerWidth > 768){
+        if( 400 > gap_7 && gap_7 > -500 && window.innerWidth > 768){
             addBili(7);
         } else {
             removeBili(7);
@@ -453,10 +317,6 @@ $(function(){
 
     function removeBili(elem){
         $('#section_'+ elem +' .ripple').removeClass('bili');
-        // $('#line_3, #line_4, #section_7_pic .feature_icons .one_icon, #section_7_pic .feature_icons dl').css({
-        //     'opacity': 0,
-        //     'visibility': 'hidden'
-        // })
     }
 
     function addBili(elem){

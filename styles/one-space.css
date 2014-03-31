@@ -550,6 +550,7 @@ Global/Grid
 
     #parallax4,
     #parallax9,
+    #parallax10,
     #parallax11,
     #parallax12{
            position: absolute;
@@ -566,6 +567,11 @@ Global/Grid
             background-image: url(../images/top_bg.jpg);
             background-size: cover;
             z-index: 3;
+       }
+
+       #parallax10{
+            background: url(../images/ice_1.png) fixed no-repeat;
+            z-index: 8;
        }
 
        #parallax11{
