@@ -107,6 +107,16 @@
         margin: 80px auto 0 auto!important;
     }
 
+    
+    .bottom-line,
+    .right-border,
+    .top-border,
+    .left-border,
+    .bottom-border,
+    .rectangle-border{
+        display: none;
+    }
+
     #parallax9 {
         background-size: inherit;
         background-position: 50% bottom!important;
@@ -383,6 +393,16 @@
     #section_1 .section-head{
         margin: 0;
         left: auto;
+    }
+
+
+    .bottom-line,
+    .right-border,
+    .top-border,
+    .left-border,
+    .bottom-border,
+    .rectangle-border{
+        display: none;
     }
 
     #section_1 .container h1.logo{
@@ -857,6 +877,15 @@
     }
     #section_1 .container h3{
         font-size: 24px;
+    }
+
+    .bottom-line,
+    .right-border,
+    .top-border,
+    .left-border,
+    .bottom-border,
+    .rectangle-border{
+        display: none;
     }
 
     #parallax4,
