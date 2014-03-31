@@ -380,6 +380,10 @@ Global/Grid
         color: #fff;
     }
 
+    #tip_mobi{
+        display: none;
+    }
+
     #apply_btn{
         position: absolute;
         top: -70px;

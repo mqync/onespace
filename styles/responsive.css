@@ -227,12 +227,6 @@
         position: relative;
         margin-top: 40px;
         margin-left: -240px;
-        /*width: auto;*/
-        /*background: none;*/
-        /*box-shadow: none;*/
-        /*border: none;*/
-        /*padding: 0;*/
-        /*color: #333;*/
     }
 
 
@@ -275,6 +269,13 @@
     }
 
     #impact-data{
+        display: block;
+    }
+
+    #tip_web{
+        display: none;
+    }
+    #tip_mobi{
         display: block;
     }
 
@@ -750,6 +751,13 @@
         background-size: 500px;
     }
     #h_h_wrap #share{
+        display: block;
+    }
+
+    #tip_web{
+        display: none;
+    }
+    #tip_mobi{
         display: block;
     }
 
@@ -1259,6 +1267,13 @@
         height: 28px;
         line-height: 28px;
         font-size: 24px;
+    }
+
+    #tip_web{
+        display: none;
+    }
+    #tip_mobi{
+        display: block;
     }
 
 }
