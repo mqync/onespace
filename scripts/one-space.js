@@ -4,7 +4,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-04-01 00:26:49
+* @Last Modified time: 2014-04-01 00:59:27
 */
 
 
@@ -15,7 +15,7 @@ $(function(){
         if(w_height < 400) {
             $('#scroll_btn').hide();
         } else {
-            $('#section_1').height(w_height);
+            $('#section_1').height(w_height + 1 );
         }
     }
 
