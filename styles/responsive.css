@@ -86,6 +86,11 @@
     ul#share{
         position: absolute;
     }
+    ul#share li{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
     #share_toggle{
         display: none;
     }
@@ -94,6 +99,7 @@
 
     #parallax4,
     #parallax9,
+    #parallax10,
     #parallax11,
     #parallax12 {
         position: absolute;
@@ -104,10 +110,9 @@
         position: static;
         top: 0;
         left: 0;
-        margin: 80px auto 0 auto!important;
+        margin: 130px auto 0 auto!important;
     }
 
-    
     .bottom-line,
     .right-border,
     .top-border,
@@ -416,6 +421,7 @@
 
     #parallax4,
     #parallax9,
+    #parallax10,
     #parallax11,
     #parallax12 {
         position: absolute;
@@ -890,6 +896,7 @@
 
     #parallax4,
     #parallax9,
+    #parallax10,
     #parallax11,
     #parallax12 {
         position: absolute;
