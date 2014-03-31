@@ -330,6 +330,7 @@ Global/Grid
         background: rgba(255, 255, 255, 0.9);
         color: #333;
         border-radius: 50%;
+        text-decoration: none;
     }
     ul#share li span.tip{
         display: none;
