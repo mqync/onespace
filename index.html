@@ -8,7 +8,6 @@
     <meta name="keywords" content="豌豆荚,可穿戴设备,全息投影,增强现实,One-Space">
     <meta name="description" content="豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！">
 
-
     <link rel="stylesheet" href="styles/typo.css">
     <link rel="stylesheet" href="styles/one-space.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -17,9 +16,6 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:900">
     <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
 
-    <!--[if gte IE 9]>
-        <link rel="stylesheet" type="text/css" href="styles/ie.css" />
-    <![endif]-->
 
     <script src="scripts/jquery-1.9.1.min.js"></script>
     <script src="scripts/skrollr.min.js"></script>
@@ -113,7 +109,7 @@
                     data-848="background: black">
                     <span>1</span></a>
                 </li>
-                <li><a class="nav" href="#section_2"
+                <li style="display:none;"><a class="nav" href="#section_2"
                     data-0="background: black"
                     data-849="background: green;"
                     data-1348="background: black">
@@ -201,7 +197,7 @@
             <a id="scroll_btn" href="#section_2" class="nav"><i class="fa fa-chevron-down"></i></a>
         </div>
 
-        <div id="section_2" class="disruptor">
+        <div id="section_2" class="disruptor" style="display:none">
             <div class="disruptor-container">
                 <div class="center-center">
                     <a class="fancybox fancybox.iframe play ripple" href="http://player.youku.com/embed/XMzA0MTgzODIw"><i class="fa fa-play"></i></a> 
@@ -209,8 +205,7 @@
             </div>
         </div>
 
-        <div id="section_3" class="section-wrapper">
-            
+        <div id="section_3" class="section-wrapper" style="background-attachment:scroll;z-index:601;">
             <div id="section_3_intro" class="container">
                 <div class="section-title" data-top-top="top:100px;" data-600-top="top: -300px;">
                     <i>.01</i>

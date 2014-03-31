@@ -1747,6 +1747,7 @@ Global/Grid
         display: block;
         -moz-transform: rotate(10deg);
         -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
         transform: rotate(10deg);
     }
     #center_line:after{
@@ -1767,6 +1768,7 @@ Global/Grid
         overflow: hidden;
         -moz-transform: rotate(-20deg);
         -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
         transform: rotate(-20deg);
     }
 
@@ -1820,6 +1822,7 @@ Global/Grid
 #section_6{
     z-index: 0;
 }
+
 
 /********************
     Section - 7
