@@ -23,9 +23,15 @@
         <script type="text/javascript" src="bower_components/fancybox/source/jquery.fancybox.js"></script>
     </head>
     <body>
-        <div id="h_h_wrap">
-            <div class="logo">One Space</div>
-            <p>喜欢 One-Space 吧？哈哈，骗你的啦！表生气表生气，其实这是豌豆荚送给大家的礼物！<br><br>豌豆荚有一群非常非常优秀的攻城师和程序猿老湿，他们的恋人、亲人或好友远在千里之外。他们非常希望，在工作之余，能和他们爱的人在一起，看看电影、玩玩游戏、读读书什么的，享受平日里温暖惬意的时光。One Space，是他们用技术表达感情的大胆想象。<br><br>豌豆荚希望通过这份小小的礼物，让豌豆荚的老湿们，还有很多很多的人，能够享受开心的娱乐休闲时光，搜 happy，So Happy！ </p>
+        <div id="header">
+            <div id="wdj-logo-wrap">
+                <a href="http://www.wandoujia.com">
+                    <i class="wan-wdj-logo" data-0="color: white"
+                    data-3448="color: green;"
+                    data-4448="color: white"></i>
+                    <span></span>
+                </a>
+            </div>
             <ul id="share" data-0="top: 0px;background:rgba(0,0,0,0);" data-50="top: -50px;background:rgba(0,0,0,0);">
                 <li id="s_weibo" title="分享到新浪微博">
                     <i class="icon-weibo"></i><span class="tip">分享到新浪微博</span>
@@ -57,6 +63,10 @@
                     <i class="fa fa-google-plus"></i><span class="tip">分享到 Google+</span>
                 </li>
             </ul>
+        </div>
+        <div id="h_h_wrap">
+            <a href="http://www.wandoujia.com/onespace" class="logo">One Space</a>
+            <p>喜欢 One-Space 吧？哈哈，骗你的啦！表生气表生气，其实这是豌豆荚送给大家的礼物！<br><br>豌豆荚有一群非常非常优秀的攻城师和程序猿老湿，他们的恋人、亲人或好友远在千里之外。他们非常希望，在工作之余，能和他们爱的人在一起，看看电影、玩玩游戏、读读书什么的，享受平日里温暖惬意的时光。One Space，是他们用技术表达感情的大胆想象。<br><br>豌豆荚希望通过这份小小的礼物，让豌豆荚的老湿们，还有很多很多的人，能够享受开心的娱乐休闲时光，搜 happy，So Happy！ </p>
         </div>
         <div id="panel_weixin">
             <h3>分享到微信</h3>
@@ -180,7 +190,15 @@
     });
 
     </script>
-    <script>
-    // GA
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-15790641-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 's.wdjimg.com/googleanalytics/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
 </html>

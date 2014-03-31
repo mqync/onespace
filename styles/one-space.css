@@ -1657,7 +1657,7 @@ Global/Grid
     }
 
     #section_5_intro #summary_card{
-        position: absolute;
+        position: relative;
         top: 250px;
         left: 600px;
         width: 300px;
@@ -2505,12 +2505,21 @@ hahaha
         background: #39ad36;
         text-align: center;
     }
+    #h_h #header{
+        position: absolute;
+        text-align: left;
+    }
+    #h_h  ul#share{
+        position: absolute;
+        margin-top: 10px;
+    }
     #h_h_wrap{
         width: 700px;
         margin: 0 auto;
-        padding: 40px 0 0 0;
+        padding: 100px 0 0 0;
     }
     #h_h_wrap .logo{
+        display: block;
         width: 300px;
         height: 90px;
         margin: 0 auto 20px auto;

@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 06:24:03
+* @Last Modified time: 2014-03-31 10:10:39
 */
 
 
@@ -445,9 +445,9 @@ $(function(){
         // }
 
         if( 400 > gap_8 && gap_8 > -500 && window.innerWidth > 768){
-            addBili(8);
+            addBili(7);
         } else {
-            removeBili(8);
+            removeBili(7);
         }
     }
 
