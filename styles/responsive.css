@@ -82,6 +82,10 @@
 
 
     /*===start===*/
+    #header,
+    ul#share{
+        position: absolute;
+    }
     #share_toggle{
         display: none;
     }
@@ -360,6 +364,10 @@
     }
 
     /*start*/
+    #header,
+    ul#share{
+        position: absolute;
+    }
     #share,
     #share_toggle{
         display: none;
@@ -838,6 +846,10 @@
     }
 
     /*start*/
+    #header,
+    ul#share{
+        position: absolute;
+    }
     #share,
     #share_toggle{
         display: none;
