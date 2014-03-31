@@ -1656,10 +1656,12 @@ Global/Grid
         color: #fff;
     }
 
-    #section_5_intro #summary_card{
+    #summary_card{
         position: absolute;
-        top: 250px;
-        left: 600px;
+        top: 50%;
+        left: 50%;
+        margin-top: 0;
+        margin-left: 110px;
         width: 300px;
         background: #fff;
         padding: 20px;
@@ -1667,6 +1669,7 @@ Global/Grid
         box-shadow: 1px 3px 6px rgba(0,0,0,0.2);
         border-radius: 0 0 5px 5px;
         border-top: 8px solid #0bab43;
+        z-index: 5;
     }
 
 
@@ -2261,7 +2264,7 @@ overlay
         position: absolute;
         top: 10px;
         right: 10px;
-        color: #fff;
+        color: #333;
         font-size: 22px;
         font-family: Arial;
         /*background: #ffffff;*/
@@ -2505,12 +2508,21 @@ hahaha
         background: #39ad36;
         text-align: center;
     }
+    #h_h #header{
+        position: absolute;
+        text-align: left;
+    }
+    #h_h  ul#share{
+        position: absolute;
+        margin-top: 10px;
+    }
     #h_h_wrap{
         width: 700px;
         margin: 0 auto;
-        padding: 40px 0 0 0;
+        padding: 100px 0 0 0;
     }
     #h_h_wrap .logo{
+        display: block;
         width: 300px;
         height: 90px;
         margin: 0 auto 20px auto;

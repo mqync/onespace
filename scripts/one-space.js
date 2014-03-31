@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 01:30:32
+* @Last Modified time: 2014-03-31 10:10:39
 */
 
 
@@ -229,11 +229,24 @@ $(function(){
 // overlay
 
     $('.overlay_btn').click(function(){
-        $('body').addClass('form_overlay_enabled');
+        if($('body').hasClass('form_overlay_enabled')){
+            $('body').removeClass('form_overlay_enabled');
+        } else {
+            $('body').addClass('form_overlay_enabled');
+        }
+        
     })
     $('.form_overlay_close').click(function(){
         $('body').removeClass('form_overlay_enabled');
     })
+
+    // $('.overlay_btn').on('tap', function(){
+    //     console.log(1);
+    //     $('body').addClass('form_overlay_enabled');
+    // })
+    // $('.form_overlay_close').on('tap', function(){
+    //     $('body').removeClass('form_overlay_enabled');
+    // })
 
 //share btn toggle
 
@@ -432,9 +445,9 @@ $(function(){
         // }
 
         if( 400 > gap_8 && gap_8 > -500 && window.innerWidth > 768){
-            addBili(8);
+            addBili(7);
         } else {
-            removeBili(8);
+            removeBili(7);
         }
     }
 
@@ -486,14 +499,16 @@ $(function(){
 
         setTimeout(function(){
 
-            window.location.href='/hahaha.html';
+            window.location.href = '/hahaha.html';
+            // window.location.href = 'file://localhost/Users/hanjiyun/Google%20Drive/Project/onespace/hahaha.html'
+
             //$('body').removeClass('form_overlay_enabled');
             
             // // reset
             // document.getElementById("apply_form").reset();
             // btn.removeAttr('disabled').removeClass('loading').html('填好了，提交申请');
 
-        },2000);
+        }, 1200);
 
         return false;
     })
