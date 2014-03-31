@@ -2521,6 +2521,9 @@ hahaha
 
         transition: all .3s;
     }
+    #h_h  ul#share li:hover{
+        background-color: #e4f3e4;
+    }
     #h_h ul#share li#s_weibo{
         color: #e71e37;
     }
