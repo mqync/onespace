@@ -2413,6 +2413,27 @@ hahaha
     #h_h #header{
         position: absolute;
         text-align: left;
+        height: auto;
+
+    }
+    #h_h #header a{
+        display: block;
+        float: left;
+        height: 40px;
+        line-height: 42px;
+        padding: 0 10px;
+        background: #339c31;
+        color: #fff;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    #h_h #header a:hover{
+        background: #2f8d2c;
+        text-decoration: none;
+    }
+
+    #h_h #wdj-logo-wrap{
+        margin: 0 auto;
     }
 
     #h_h_wrap{
