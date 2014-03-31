@@ -4,7 +4,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 20:36:22
+* @Last Modified time: 2014-03-31 23:31:37
 */
 
 
@@ -271,7 +271,7 @@ $(function(){
                     href: x
                 })
         }!$.browser.msie && !$.browser.mozilla ? n[0].click() : e.open(n.attr("href"));
-        _gaq.push(["_trackEvent", "onespace", "share", t[0].id])
+        // _gaq.push(["_trackEvent", "onespace", "share", t[0].id])
     });
 
 
