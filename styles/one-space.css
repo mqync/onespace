@@ -2521,6 +2521,7 @@ hahaha
     #h_h_wrap p{
         padding: 30px 13px 260px 13px;
         background: url(../images/hahaha.jpg) center bottom no-repeat;
+        background-size: 500px;
         text-align: left;
         color: #fff;
         border-top: 1px solid #5ac257;
@@ -2548,7 +2549,7 @@ hahaha
         }
         #h_h_wrap p{
             background: url(../images/hahaha@2x.jpg) center bottom no-repeat;
-            background-size: 600px;
+            background-size: 500px;
         }
         #section_9_intro dt a{
             background-image: url(../images/partner@2x.png);
