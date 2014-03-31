@@ -1196,11 +1196,9 @@
 
 
     #h_h{
-        /*height: 100%;*/
         background: #fff;
     }
     #h_h body{
-        /*height: 100%;*/
         background: #39ad36;
         text-align: center;
     }
@@ -1209,20 +1207,21 @@
         margin: 0 10px;
         padding: 30px 0 0 0;
     }
-    /*#h_h_wrap p{
-        padding: 30px 0px 300px 0px;
-        background: url(../images/hahaha.jpg) center bottom no-repeat;
-        background-size: 80%;
-        text-align: left;
-        color: #fff;
-        border-top: 1px solid #349d31;
-    }*/
     #top_pic{
+        height: 230px;
         background-size: 90%;
     }
-
     #h_h_wrap #share{
         display: block;
+    }
+    #h_h ul#share{
+        margin: 0;
+    }
+    #h_h ul#share li{
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 24px;
     }
 
 }
