@@ -4,11 +4,15 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 23:31:37
+* @Last Modified time: 2014-03-31 23:58:12
 */
 
 
 $(function(){
+
+    var w_height = $(window).height();
+    console.log(w_height);
+    $('#section_1').height(w_height);
 
 // draw line
     var c_1 = document.getElementById("line_1");
