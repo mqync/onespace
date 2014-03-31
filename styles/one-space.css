@@ -2418,28 +2418,17 @@ hahaha
     #h_h_wrap{
         width: 700px;
         margin: 0 auto;
-        padding: 100px 0 0 0;
-    }
-    #h_h_wrap .logo{
-        display: block;
-        width: 300px;
-        height: 90px;
-        margin: 0 auto 20px auto;
-        background: url(../images/logo.png) center top no-repeat;
-        background-size: 300px;
-        text-indent: -999em;
+        padding: 30px 0 0 0;
     }
     #h_h_wrap p{
         padding: 30px 13px 30px 13px;
         text-align: left;
         color: #fff;
-        border-top: 1px solid #349d31;
     }
-    #h_h  ul#share{
-        border-top: 1px solid #349d31;
-        padding-top: 30px;
+    #h_h ul#share{
         position: static;
         float: none;
+        padding-top: 0;
     }
     #h_h  ul#share li{
         display: inline-block;
@@ -2490,12 +2479,19 @@ hahaha
         color: #4281ef
     }
 
+    #h_h #footer{
+        color: #177014;
+        background: #39ad36;
+    }
+    #h_h #footer .interpretation{
+        color: #177014;
+    }
 
-    #bottom_pic{
+    #top_pic{
         height: 288px;
         width: 100%;
         max-width: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         background: url(../images/hahaha.jpg) center center no-repeat;
         background-size: 500px;
     }
@@ -2518,7 +2514,7 @@ hahaha
             background-image: url(../images/logo@2x.png);
             background-size: 300px;
         }
-        #bottom_pic{
+        #top_pic{
             background-image: url(../images/hahaha@2x.jpg);
             background-size: 500px;
         }
