@@ -2512,10 +2512,7 @@ hahaha
         position: absolute;
         text-align: left;
     }
-    #h_h  ul#share{
-        position: absolute;
-        margin-top: 10px;
-    }
+
     #h_h_wrap{
         width: 700px;
         margin: 0 auto;
@@ -2531,15 +2528,75 @@ hahaha
         text-indent: -999em;
     }
     #h_h_wrap p{
-        padding: 30px 13px 260px 13px;
-        background: url(../images/hahaha.jpg) center bottom no-repeat;
-        background-size: 500px;
+        padding: 30px 13px 30px 13px;
         text-align: left;
         color: #fff;
-        border-top: 1px solid #5ac257;
-        /*border-bottom: 1px solid #5ac257;*/
+        border-top: 1px solid #349d31;
+    }
+    #h_h  ul#share{
+        border-top: 1px solid #349d31;
+        padding-top: 30px;
+        position: static;
+        float: none;
+    }
+    #h_h  ul#share li{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-left: 2px;
+        margin-bottom: 5px;
+
+        border-radius: 5px;
+        background: #fff;
+
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        
+
+        cursor: pointer;
+        opacity: 1;
+
+        transition: all .3s;
+    }
+    #h_h ul#share li#s_weibo{
+        color: #e71e37;
+    }
+    #h_h ul#share li#s_douban{
+        color: #2e963e
+    }
+    #h_h ul#share li#s_wechat a{
+        color: #6ec449
+    }
+    #h_h ul#share li#s_renren{
+        color: #296da8
+    }
+    #h_h ul#share li#s_q-zone{
+        color: #fdc02d
+    }
+    #h_h ul#share li#s_baidutieba{
+        color: #2832e1
+    }
+    #h_h ul#share li#s_twitter{
+        color: #55acee
+    }
+    #h_h ul#share li#s_facebook{
+        color: #47639e
+    }
+    #h_h ul#share li#s_googleplus{
+        color: #4281ef
     }
 
+
+    #bottom_pic{
+        height: 288px;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 30px;
+        background: url(../images/hahaha.jpg) center center no-repeat;
+        background-size: 500px;
+    }
 /*Retina*/
 
     @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
@@ -2559,8 +2616,8 @@ hahaha
             background-image: url(../images/logo@2x.png);
             background-size: 300px;
         }
-        #h_h_wrap p{
-            background: url(../images/hahaha@2x.jpg) center bottom no-repeat;
+        #bottom_pic{
+            background-image: url(../images/hahaha@2x.jpg);
             background-size: 500px;
         }
         #section_9_intro dt a{

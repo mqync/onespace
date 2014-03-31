@@ -746,6 +746,9 @@
     #h_h_wrap p{
         background-size: 500px;
     }
+    #h_h_wrap #share{
+        display: block;
+    }
 
 }
 
@@ -1253,13 +1256,20 @@
         background-size: 300px;
         text-indent: -999em;
     }
-    #h_h_wrap p{
+    /*#h_h_wrap p{
         padding: 30px 0px 300px 0px;
         background: url(../images/hahaha.jpg) center bottom no-repeat;
         background-size: 80%;
         text-align: left;
         color: #fff;
-        border-top: 1px solid #5ac257;
+        border-top: 1px solid #349d31;
+    }*/
+    #bottom_pic{
+        background-size: 90%;
+    }
+
+    #h_h_wrap #share{
+        display: block;
     }
 
 }
