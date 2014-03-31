@@ -137,6 +137,12 @@
         background-position: 50% 240px;
     }
 
+    #scroll_btn{
+        display: block;
+    }
+
+
+
     #section_2{
         height: 500px;
     }
@@ -444,6 +450,9 @@
     }
     #parallax4{
         background-position: 50% 100px;
+    }
+    #scroll_btn{
+        display: block;
     }
 
 
@@ -928,6 +937,10 @@
         background-position: 50% 150px;
         background-size: 500px;
     }
+    #scroll_btn{
+        display: block;
+    }
+
 
     #section_2{
         height: 500px;
@@ -936,14 +949,6 @@
         top: 0;
         padding-top: 150px;
     }
-    video.macro{
-        height: 100%;
-        width: 100%;
-    }
-    video#macro_svg{
-        display: none;
-    }
-
 
 
     #section_3{
