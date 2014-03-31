@@ -4,7 +4,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-04-01 00:59:27
+* @Last Modified time: 2014-04-01 01:24:41
 */
 
 
@@ -15,7 +15,7 @@ $(function(){
         if(w_height < 400) {
             $('#scroll_btn').hide();
         } else {
-            $('#section_1').height(w_height + 1 );
+            $('#section_1').height(w_height);
         }
     }
 
@@ -204,7 +204,7 @@ $(function(){
         text_for_twitter = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！", // text weibo
  
         // pic
-        w = "http%3A%2F%2Fimg.wdjimg.com%2Faward%2Fupload%2Fone%2Fweibo-28.png",
+        w = "http://img.wdjimg.com/mms/banner/9/37/b6fe7d5b9c93f914d64003cda0db5379.jpeg",
         // static URL
         url = "http%3A%2F%2Fwww.wandoujia.com%2Fonespace",
 
