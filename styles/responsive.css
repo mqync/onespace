@@ -207,15 +207,16 @@
     #section_5_intro .summary p{
         color: #333;
     }
-    #section_5_intro #summary_card{
-        position: static;
+    #summary_card{
+        position: relative;
         margin-top: 40px;
-        width: auto;
-        background: none;
-        box-shadow: none;
-        border: none;
-        padding: 0;
-        color: #333;
+        margin-left: -240px;
+        /*width: auto;*/
+        /*background: none;*/
+        /*box-shadow: none;*/
+        /*border: none;*/
+        /*padding: 0;*/
+        /*color: #333;*/
     }
 
 
@@ -566,15 +567,15 @@
     #section_5_intro .summary p{
         color: #333;
     }
-    #section_5_intro #summary_card{
-        width: auto;
+    #summary_card{
+        /*width: auto;
         position: static;
         padding: 0;
         background: none;
         border: none;
         box-shadow: none;
         border-radius: 0;
-        margin-top: 20px;
+        margin-top: 20px;*/
     }
 
     #impact-data{
@@ -1039,18 +1040,17 @@
     #section_5_intro .summary p{
         color: #333;
     }
-    #section_5_intro #summary_card{
-        width: auto;
-        position: static;
-        padding: 0;
-        background: none;
-        border: none;
-        box-shadow: none;
-        border-radius: 0;
-        margin-top: 20px;
+    #summary_card{
+        width: 280px;
+        padding: 10px!important;
+        position: relative;
+        z-index: 5;
+        margin-left: -150px;
+        margin-top: 30px;
     }
 
     #impact-data{
+        width: 300px;
         display: block;
         height: 100%;
         left: 50%;
@@ -1096,11 +1096,16 @@
     #section_7_pic .feature_icons .one_icon{
         margin-bottom: 0;
         border-color: #fff;
+        width: 122px;
     }
+
     #section_7_pic .feature_icons dl{
-        margin:0  12px;
+        margin:0  10px;
         padding: 10px 5px;
         background: rgba(0,0,0,0.4);
+    }
+    #section_7_pic .feature_icons dt{
+        font-weight: normal;
     }
 
     #section_7_intro{

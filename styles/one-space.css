@@ -1656,10 +1656,12 @@ Global/Grid
         color: #fff;
     }
 
-    #section_5_intro #summary_card{
-        position: relative;
-        top: 250px;
-        left: 600px;
+    #summary_card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 0;
+        margin-left: 110px;
         width: 300px;
         background: #fff;
         padding: 20px;
@@ -1667,6 +1669,7 @@ Global/Grid
         box-shadow: 1px 3px 6px rgba(0,0,0,0.2);
         border-radius: 0 0 5px 5px;
         border-top: 8px solid #0bab43;
+        z-index: 5;
     }
 
 
