@@ -1,10 +1,10 @@
-@charset "UTF-8";
+// @charset "UTF-8";
 
 /* 
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 17:27:31
+* @Last Modified time: 2014-03-31 17:45:15
 */
 
 
@@ -68,12 +68,11 @@ $(function(){
     var $root = $('html, body');
     $('a.nav').click(function() {
         var href = $.attr(this, 'href');
-        // console.log(href)
         $root.animate({
             scrollTop: $(href).offset().top
         }, 1500, function () {
-        window.location.hash = href;
-    });
+            window.location.hash = href;
+        });
         return false;
     });
     // END Navigation
