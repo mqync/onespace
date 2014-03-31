@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 10:10:39
+* @Last Modified time: 2014-03-31 14:57:49
 */
 
 
@@ -291,9 +291,9 @@ $(function(){
 
 //share to SNS
     var n = window.document;
-    var m = "豌豆荚发布新产品，进军可穿戴设备",
-        g = "这个愚人节创意很赞呢，虽然只是个玩笑，但这个想法要是真的实现了，高铁飞机真人 CS 神马的就弱爆了，分享链接：http://www.wandoujia.com/onespace", //description
-        y = "哇，这个愚人节创意真的很有爱，攻城师的浪漫和爱果然高大上啊~分享链接：http://www.wandoujia.com/onespace", // text weibo
+    var m = "穿在身上的手机娱乐搜索",
+        g = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！http://www.wandoujia.com/onespace", //description
+        y = "Boom!!! 豌豆荚 One-Space 发布——完美集成「手机娱乐搜索」及「增强现实」的智能服装，彻底改变局限在小屏幕上的娱乐体验，通过全息投影创造「沉浸式空间」呈现丰富内容，还可以将远方好友投影到身边实时互动！猛戳右边申请试用，仅限今天！http://www.wandoujia.com/onespace", // text weibo
         b = "54354", // title
 
         // 配图
