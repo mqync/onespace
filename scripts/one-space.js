@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-03-31 15:32:37
+* @Last Modified time: 2014-03-31 15:44:54
 */
 
 
@@ -508,14 +508,16 @@ $(function(){
 
         setTimeout(function(){
 
-            window.location.href = '/hahaha.html';
-            // window.location.href = 'file://localhost/Users/hanjiyun/Google%20Drive/Project/onespace/hahaha.html'
+            // reset
+            $('body').removeClass('form_overlay_enabled');
+            document.getElementById("apply_form").reset();
+            btn.removeAttr('disabled').removeClass('loading').html('填好了，提交申请');
 
-            //$('body').removeClass('form_overlay_enabled');
-            
-            // // reset
-            // document.getElementById("apply_form").reset();
-            // btn.removeAttr('disabled').removeClass('loading').html('填好了，提交申请');
+            if(window.location.href.indexOf('hanjiyun') > 0){
+                window.location.href = 'file://localhost/Users/hanjiyun/Google%20Drive/Project/onespace/april_fool.html'
+            } else {
+                window.location.href = '/april_fool.html';
+            }
 
         }, 1200);
 
