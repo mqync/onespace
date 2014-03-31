@@ -1031,6 +1031,7 @@ Global/Grid
     #section_3{
         background: #eee url(../images/bg.jpg) center center fixed;
         height: 800px;
+        z-index: 1;
     }
 
     #section_3_pic{
@@ -1760,13 +1761,16 @@ Global/Grid
     }
 
 
+#section_6{
+    z-index: 0;
+}
+
 /********************
     Section - 7
 ********************/
 
     #section_7{
         height: 800px;
-        /*background: #27ae60;*/
         overflow: hidden;
         text-align: center;
         background: #dfdfdf url(../images/idev.jpg) center center no-repeat;
