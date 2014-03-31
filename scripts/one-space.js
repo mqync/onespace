@@ -4,7 +4,7 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-04-01 06:25:17
+* @Last Modified time: 2014-04-01 06:26:33
 */
 
 
@@ -26,7 +26,7 @@ $(function(){
         return rv;
     }
 
-    getIEVersion();
+    console.log( getIEVersion())
 
     if(jQuery.browser.mobile){
         var w_height = $(window).height();
