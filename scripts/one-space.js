@@ -4,11 +4,18 @@
 * @Author: hanjiyun
 * @Date:   2014-03-19 15:04:09
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2014-04-01 01:24:41
+* @Last Modified time: 2014-04-01 06:21:39
 */
 
 
 $(function(){
+
+    if (!+[1,]){
+   　　 alert("我是货真价实的IE浏览器!")
+　　}
+　　else{
+  　　  alert("我不是IE!")
+　　}
 
     if(jQuery.browser.mobile){
         var w_height = $(window).height();
