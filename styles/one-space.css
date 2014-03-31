@@ -24,6 +24,7 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    text-rendering: auto;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -515,11 +516,11 @@ Global/Grid
     border-radius: 5px;
     text-align: center;
     line-height: 39px;
-    font-size: 25px;
-    background: #1bab46;
+    font-size: 14px;
+    background: rgba(0,0,0,0.2);
     color: #fff;
     /*font-size: 0;*/
-    box-shadow: 0 0 0px 1px rgba(0,0,0,.2) inset;
+    box-shadow: 0 0 0px 1px rgba(0,0,0,.1) inset;
     z-index: 1;
     cursor: pointer;
     -webkit-transition: background .3s, border-radius .3s;
