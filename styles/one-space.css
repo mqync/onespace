@@ -1607,7 +1607,8 @@ Global/Grid
         vertical-align: top;
         height: 90px;
         width: 340px;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-top: -5px;
         padding-top: 0px;
         background: url(../images/sohappy.png) top center no-repeat;
         background-size:340px;
@@ -2187,11 +2188,11 @@ Global/Grid
     #footer{
         padding: 20px 0;
         background: #eee;
-        text-align: left;
+        color: #999;
+        text-align: center;
         font-size: 12px;
     }
 
-.footer{padding:30px 0 0;width:100%}.footer a{color:#999}.ft-inner{margin:0 auto;position:relative;width:940px}.ft-inner dl{margin-bottom:30px}.ft-inner dt{font-weight:700;position:relative;width:260px}.ft-inner dd,.ft-inner dt{display:inline-block;vertical-align:middle;*vertical-align:auto;*zoom:1;*display:inline;float:left}.ft-inner dd{margin:28px 0 0 -259px;vertical-align:top;width:260px}.ft-inner dd ul li{line-height:1.8}.ft-inner .others{color:#999;line-height:1.8;padding:30px 0;text-align:center}.socials{position:absolute;right:0;top:0}.socials .sc-icon{display:inline-block;vertical-align:middle;*vertical-align:auto;*zoom:1;*display:inline;filter:alpha(Opacity=70);opacity:.7;-moz-transition:opacity .2s linear;-o-transition:opacity .2s linear;-webkit-transition:opacity .2s linear;transition:opacity .2s linear;height:32px;margin-right:9px;width:32px}.socials .sc-icon:hover{filter:alpha(enabled=false);opacity:1}.socials .weibo-icon{background-image:url(http://img.wdjimg.com/www/images/icons-s51ac6e85d6.png);background-position:0 -424px;background-repeat:no-repeat}@media (-webkit-min-device-pixel-ratio:2),(-o-min-device-pixel-ratio:3 / 2),(min-device-pixel-ratio:2){.socials .weibo-icon{background-image:url(http://img.wdjimg.com/www/images/icons-2x-s6b9c516d89.png);background-size:156px 426px;background-position:0 -394px}}.socials .twitter-icon{background-image:url(http://img.wdjimg.com/www/images/icons-s51ac6e85d6.png);background-position:0 -388px;background-repeat:no-repeat}@media (-webkit-min-device-pixel-ratio:2),(-o-min-device-pixel-ratio:3 / 2),(min-device-pixel-ratio:2){.socials .twitter-icon{background-image:url(http://img.wdjimg.com/www/images/icons-2x-s6b9c516d89.png);background-size:156px 426px;background-position:0 -360px}}.socials .blog-icon{background-image:url(http://img.wdjimg.com/www/images/icons-s51ac6e85d6.png);background-position:0 -36px;background-repeat:no-repeat}@media (-webkit-min-device-pixel-ratio:2),(-o-min-device-pixel-ratio:3 / 2),(min-device-pixel-ratio:2){.socials .blog-icon{background-image:url(http://img.wdjimg.com/www/images/icons-2x-s6b9c516d89.png);background-size:156px 426px;background-position:0 -34px}}.socials .bbs-icon{background-image:url(http://img.wdjimg.com/www/images/icons-s51ac6e85d6.png);background-position:0 0;background-repeat:no-repeat}
 
 
 img#impact {
@@ -2211,13 +2212,6 @@ img#impact {
     width: 100%;
     z-index: -2;
     display: none;
-}
-
-
-
-footer{
-    padding: 20px 0;
-    background: #c00;
 }
 
 
