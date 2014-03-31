@@ -1240,11 +1240,10 @@
     #h_h_wrap p{
         padding: 30px 0px 300px 0px;
         background: url(../images/hahaha.jpg) center bottom no-repeat;
-        background-size: 100%;
+        background-size: 500px;
         text-align: left;
         color: #fff;
         border-top: 1px solid #5ac257;
-        /*border-bottom: 1px solid #5ac257;*/
     }
 
 }
